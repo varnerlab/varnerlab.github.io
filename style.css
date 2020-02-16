@@ -3,3 +3,77 @@ body {
     background-color: #000000;
     color:#ffffff;
 }
+
+footer {
+    padding-left: 10px;
+}
+
+header {
+    padding-left: 10px;
+}
+
+a:link {
+    color:#6B6B6B;
+    text-decoration: none;
+}
+  
+/* visited link */
+a:visited {
+    color: #363538;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #BfBfBf;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    columns: #408697;
+    text-decoration: none;
+}
+
+p.small {
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+div.paper_short_title {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+a.paper {
+    color:#BfBfBf;
+    font-size: small;
+}
+
+a.paper:hover {
+    color:  #F48200;
+    text-decoration: none;
+}
+
+a.code {
+    color: lightslategray;
+    font-size: small;
+}
+
+a.code:hover {
+    color: #F48200;
+    font-size: small;
+}
+
+div.year {
+    padding-left: 10px;
+    color: #494949;
+}
+
+article.download {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+}
