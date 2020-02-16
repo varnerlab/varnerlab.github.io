@@ -43,6 +43,7 @@ div.paper_short_title {
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
+    color:#e2dfdf;
 }
 
 a.paper {
@@ -51,7 +52,7 @@ a.paper {
 }
 
 a.paper:hover {
-    color:  #F48200;
+    color:  #52d6f4;
     text-decoration: none;
 }
 
@@ -61,7 +62,7 @@ a.code {
 }
 
 a.code:hover {
-    color: #F48200;
+    color: #52d6f4;
     font-size: small;
     font-family: Arial, Helvetica, sans-serif;
 }
