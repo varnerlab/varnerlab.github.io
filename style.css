@@ -46,13 +46,17 @@ div.paper_short_title {
     color:#e2dfdf;
 }
 
+div.paper_short_title:hover {
+    color: inherit;
+}
+
 a.paper {
     color:#BfBfBf;
     font-size: small;
 }
 
 a.paper:hover {
-    color:  #52d6f4;
+    color:  #F6BB0A;
     text-decoration: none;
 }
 
@@ -62,13 +66,13 @@ a.code {
 }
 
 a.code:hover {
-    color: #52d6f4;
+    color: #F6BB0A;
     font-size: small;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 a.text_link {
-    color:#F48200
+    color:#F6BB0A;
 }
 
 div.year {
@@ -90,4 +94,8 @@ article.download {
     padding-top: 10px;
     padding-bottom: 5px;
     padding-left: 30px;
+}
+
+article.download:hover {
+    color:#ffffff;
 }
