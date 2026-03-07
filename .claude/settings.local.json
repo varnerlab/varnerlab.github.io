@@ -19,7 +19,8 @@
       "WebFetch(domain:ecornell.cornell.edu)",
       "WebFetch(domain:github.com)",
       "Bash(whois:*)",
-      "WebFetch(domain:raw.githubusercontent.com)"
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(dig:*)"
     ]
   }
 }
