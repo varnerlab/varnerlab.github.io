@@ -1,14 +1,14 @@
 /* ===== CSS Variables ===== */
 :root {
-    --color-bg: #f8f9fa;
-    --color-white: #ffffff;
-    --color-text: #1a1a2e;
-    --color-text-secondary: #4a4a5a;
-    --color-accent: #B31B1B;
-    --color-accent-hover: #8a1515;
-    --color-border: #e0e0e0;
-    --color-shadow: rgba(0, 0, 0, 0.08);
-    --font-stack: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+    --color-bg: #F3F3F3;
+    --color-white: #FFFFFF;
+    --color-text: #3B3B3B;
+    --color-text-secondary: #616161;
+    --color-accent: #005FB8;
+    --color-accent-hover: #0258A8;
+    --color-border: #E5E5E5;
+    --color-shadow: rgba(0, 0, 0, 0.06);
+    --font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
     --max-width: 1100px;
     --radius: 8px;
 }
@@ -70,7 +70,7 @@ img {
 
 .navbar-brand {
     font-size: 1.25rem;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--color-text);
     letter-spacing: -0.02em;
 }
@@ -88,7 +88,7 @@ img {
 .navbar-links a {
     color: var(--color-text-secondary);
     font-size: 0.95rem;
-    font-weight: 500;
+    font-weight: 400;
     padding: 4px 0;
     border-bottom: 2px solid transparent;
     transition: color 0.2s, border-color 0.2s;
@@ -141,8 +141,8 @@ img {
 
 .hero-text h1 {
     font-size: 2.5rem;
-    font-weight: 800;
-    letter-spacing: -0.03em;
+    font-weight: 600;
+    letter-spacing: -0.02em;
     margin-bottom: 8px;
 }
 
@@ -166,10 +166,10 @@ main {
 
 /* ===== Section Headings ===== */
 .section-title {
-    font-size: 1.75rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 500;
     margin-bottom: 24px;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
 }
 
 .section-subtitle {
@@ -206,7 +206,8 @@ main {
 }
 
 .highlight-card h3 {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
+    font-weight: 500;
     margin-bottom: 8px;
 }
 
@@ -217,7 +218,7 @@ main {
 }
 
 .highlight-card .card-link {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 0.9rem;
 }
 
@@ -239,12 +240,12 @@ main {
 }
 
 .year-label {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.25rem;
+    font-weight: 500;
     color: var(--color-accent);
     margin-bottom: 16px;
     padding-bottom: 8px;
-    border-bottom: 2px solid var(--color-accent);
+    border-bottom: 1px solid var(--color-accent);
     display: inline-block;
 }
 
@@ -260,8 +261,8 @@ main {
 }
 
 .pub-card .pub-title {
-    font-size: 1.05rem;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 500;
     margin-bottom: 6px;
 }
 
@@ -280,7 +281,7 @@ main {
 
 .pub-card .pub-links a {
     font-size: 0.85rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 /* ===== Software Grid ===== */
@@ -291,7 +292,8 @@ main {
 }
 
 .software-card h3 {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
+    font-weight: 500;
     margin-bottom: 8px;
 }
 
@@ -311,7 +313,7 @@ main {
 .badge {
     display: inline-block;
     font-size: 0.75rem;
-    font-weight: 600;
+    font-weight: 500;
     padding: 3px 10px;
     border-radius: 12px;
     text-transform: uppercase;
@@ -346,14 +348,15 @@ main {
 }
 
 .course-card h3 {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
+    font-weight: 500;
     margin-bottom: 4px;
 }
 
 .course-card .semester {
     font-size: 0.85rem;
     color: var(--color-accent);
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 8px;
 }
 
@@ -372,8 +375,8 @@ main {
 
 .page-header h1 {
     font-size: 2rem;
-    font-weight: 800;
-    letter-spacing: -0.03em;
+    font-weight: 600;
+    letter-spacing: -0.02em;
 }
 
 .page-header p {
@@ -430,7 +433,7 @@ footer .footer-links a:hover {
     }
 
     .hero-text h1 {
-        font-size: 1.75rem;
+        font-size: 1.6rem;
     }
 
     .hero {
