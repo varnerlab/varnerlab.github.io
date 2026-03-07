@@ -17,7 +17,8 @@
       "WebFetch(domain:api.openalex.org)",
       "WebFetch(domain:classes.cornell.edu)",
       "WebFetch(domain:ecornell.cornell.edu)",
-      "WebFetch(domain:github.com)"
+      "WebFetch(domain:github.com)",
+      "Bash(whois:*)"
     ]
   }
 }
