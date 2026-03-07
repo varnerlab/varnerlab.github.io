@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:scholar.google.com)",
+      "WebFetch(domain:www.researchgate.net)",
+      "WebFetch(domain:www.engineering.cornell.edu)",
+      "WebFetch(domain:www.duffield.cornell.edu)",
+      "WebFetch(domain:pmc.ncbi.nlm.nih.gov)",
+      "WebFetch(domain:www.mdpi.com)",
+      "WebFetch(domain:www.biorxiv.org)",
+      "WebFetch(domain:pubmed.ncbi.nlm.nih.gov)",
+      "WebFetch(domain:ecommons.cornell.edu)",
+      "Bash(open:*)",
+      "WebFetch(domain:arxiv.org)",
+      "WebFetch(domain:api.semanticscholar.org)",
+      "WebFetch(domain:api.openalex.org)",
+      "WebFetch(domain:classes.cornell.edu)",
+      "WebFetch(domain:ecornell.cornell.edu)"
+    ]
+  }
+}

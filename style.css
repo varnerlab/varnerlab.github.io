@@ -1,101 +1,456 @@
+/* ===== CSS Variables ===== */
+:root {
+    --color-bg: #f8f9fa;
+    --color-white: #ffffff;
+    --color-text: #1a1a2e;
+    --color-text-secondary: #4a4a5a;
+    --color-accent: #B31B1B;
+    --color-accent-hover: #8a1515;
+    --color-border: #e0e0e0;
+    --color-shadow: rgba(0, 0, 0, 0.08);
+    --font-stack: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+    --max-width: 1100px;
+    --radius: 8px;
+}
+
+/* ===== Reset & Base ===== */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #282C34;
-    color:#ffffff;
+    font-family: var(--font-stack);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-header {
-    padding-left: 10px;
-}
-
-a:link {
-    color:#6B6B6B;
+a {
+    color: var(--color-accent);
     text-decoration: none;
-}
-  
-/* visited link */
-a:visited {
-    color: #363538;
-    text-decoration: none;
+    transition: color 0.2s;
 }
 
-/* mouse over link */
 a:hover {
-    color: #BfBfBf;
-    text-decoration: none;
+    color: var(--color-accent-hover);
 }
 
-/* selected link */
-a:active {
-    columns: #408697;
-    text-decoration: none;
+img {
+    max-width: 100%;
 }
 
-p.small {
-    font-size: small;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-    padding-left: inherit;
-    color:#BfBfBf;
+/* ===== Container ===== */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+    width: 100%;
 }
 
-div.paper_short_title {
-    font-size: large;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-    color:#e2dfdf;
+/* ===== Navigation ===== */
+.navbar {
+    background: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-div.paper_short_title:hover {
-    color: inherit;
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
 }
 
-a.paper {
-    color:#BfBfBf;
-    font-size: small;
+.navbar-brand {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-text);
+    letter-spacing: -0.02em;
 }
 
-a.paper:hover {
-    color:  #F6BB0A;
-    text-decoration: none;
+.navbar-brand:hover {
+    color: var(--color-accent);
 }
 
-a.code {
-    color: lightslategray;
-    font-size: small;
+.navbar-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
 }
 
-a.code:hover {
-    color: #F6BB0A;
-    font-size: small;
-    font-family: Arial, Helvetica, sans-serif;
+.navbar-links a {
+    color: var(--color-text-secondary);
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 4px 0;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
 }
 
-a.text_link {
-    color:#F6BB0A;
+.navbar-links a:hover,
+.navbar-links a.active {
+    color: var(--color-accent);
+    border-bottom-color: var(--color-accent);
 }
 
-div.year {
-    padding-left: 10px;
-    color: #5C6371;
+.navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
 }
 
-div.text_blurb {
-    padding-left: 10px;
-    padding-bottom: 20px;
-    font-weight: lighter;
-    font-style: normal;
-    font-family: Arial, Helvetica, sans-serif;
-    color:#BfBfBf;
-    font-size: 12pt;
+.navbar-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--color-text);
+    margin: 5px 0;
+    transition: 0.3s;
 }
 
-article.download {
-    padding-top: 10px;
-    padding-bottom: 5px;
-    padding-left: 30px;
+/* ===== Hero ===== */
+.hero {
+    background: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
+    padding: 64px 0;
 }
 
-article.download:hover {
-    color:#ffffff;
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin-bottom: 8px;
+}
+
+.hero .tagline {
+    font-size: 1.2rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 4px;
+}
+
+.hero .affiliation {
+    font-size: 1rem;
+    color: var(--color-accent);
+    font-weight: 500;
+}
+
+/* ===== Main Content ===== */
+main {
+    flex: 1;
+    padding: 48px 0;
+}
+
+/* ===== Section Headings ===== */
+.section-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    letter-spacing: -0.02em;
+}
+
+.section-subtitle {
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 32px;
+    max-width: 640px;
+}
+
+/* ===== Cards ===== */
+.card {
+    background: var(--color-white);
+    border-radius: var(--radius);
+    box-shadow: 0 1px 3px var(--color-shadow);
+    padding: 24px;
+    transition: box-shadow 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px var(--color-shadow);
+}
+
+/* Highlight cards on homepage */
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.highlight-card {
+    text-align: center;
+    padding: 32px 24px;
+}
+
+.highlight-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+}
+
+.highlight-card p {
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+}
+
+.highlight-card .card-link {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* ===== About Section ===== */
+.about {
+    margin-bottom: 48px;
+}
+
+.about p {
+    font-size: 1.05rem;
+    color: var(--color-text-secondary);
+    max-width: 720px;
+    line-height: 1.7;
+}
+
+/* ===== Year Dividers (Publications) ===== */
+.year-group {
+    margin-bottom: 40px;
+}
+
+.year-label {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-accent);
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--color-accent);
+    display: inline-block;
+}
+
+/* Publication cards */
+.pub-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.pub-card {
+    padding: 20px 24px;
+}
+
+.pub-card .pub-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.pub-card .pub-authors {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.pub-card .pub-links {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.pub-card .pub-links a {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* ===== Software Grid ===== */
+.software-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+.software-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.software-card p {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.software-card .meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.badge-julia {
+    background: #9558B2;
+    color: white;
+}
+
+.badge-python {
+    background: #3776AB;
+    color: white;
+}
+
+.badge-matlab {
+    background: #e16737;
+    color: white;
+}
+
+.badge-octave {
+    background: #0790C0;
+    color: white;
+}
+
+/* ===== Teaching ===== */
+.course-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.course-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
+.course-card .semester {
+    font-size: 0.85rem;
+    color: var(--color-accent);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.course-card p {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+}
+
+/* ===== Page Header ===== */
+.page-header {
+    background: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
+    padding: 40px 0;
+}
+
+.page-header h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+}
+
+.page-header p {
+    color: var(--color-text-secondary);
+    margin-top: 8px;
+}
+
+/* ===== Footer ===== */
+footer {
+    background: var(--color-white);
+    border-top: 1px solid var(--color-border);
+    padding: 32px 0;
+    margin-top: auto;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+footer .footer-info {
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+}
+
+footer .footer-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+footer .footer-links a {
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+}
+
+footer .footer-links a:hover {
+    color: var(--color-accent);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero {
+        padding: 40px 0;
+    }
+
+    main {
+        padding: 32px 0;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background: var(--color-white);
+        border-bottom: 1px solid var(--color-border);
+        padding: 16px 24px;
+        gap: 16px;
+    }
+
+    .navbar-links.open {
+        display: flex;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar .container {
+        position: relative;
+    }
+
+    .highlight-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .software-grid {
+        grid-template-columns: 1fr;
+    }
+
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
 }

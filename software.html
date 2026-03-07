@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Software | Varner Lab</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">VARNERLAB</a>
+            <button class="navbar-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.navbar-links').classList.toggle('open')">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="navbar-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="software.html" class="active">Software</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Software</h1>
+            <p>Open-source tools, models, and packages developed by the lab.</p>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <div class="software-grid">
+
+                <div class="card software-card">
+                    <h3>MarketGPT</h3>
+                    <p>A generative pre-trained transformer for modeling financial time series and replicating limit order book dynamics.</p>
+                    <div class="meta">
+                        <span class="badge badge-julia">Julia</span>
+                        <a href="https://arxiv.org/abs/2411.16585">arXiv &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card software-card">
+                    <h3>Scalable ABM Market Simulator</h3>
+                    <p>Agent-based financial market simulation platform with multiple assets, distributed computing, and heterogeneous agents.</p>
+                    <div class="meta">
+                        <span class="badge badge-julia">Julia</span>
+                        <a href="https://arxiv.org/abs/2312.14903">arXiv &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card software-card">
+                    <h3>CHEME-5660 Course Repository</h3>
+                    <p>Course materials for Financial Data, Markets, and Mayhem: quantitative finance for scientists and engineers.</p>
+                    <div class="meta">
+                        <span class="badge badge-julia">Julia</span>
+                        <a href="https://github.com/varnerlab/CHEME-5660-CourseRepository-Fall-2025.git">GitHub &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card software-card">
+                    <h3>CHEME-5800 Course Repository</h3>
+                    <p>Course materials for Principles of Computational Thinking for Engineers: data science, ML, and mathematical modeling.</p>
+                    <div class="meta">
+                        <span class="badge badge-julia">Julia</span>
+                        <a href="https://github.com/varnerlab/CHEME-5800-Lectures-Fall-2025.git">GitHub &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card software-card">
+                    <h3>CHEME-5820 Course Repository</h3>
+                    <p>Course materials for Machine Learning and AI Methods for Engineers: supervised learning, deep learning, and reinforcement learning.</p>
+                    <div class="meta">
+                        <span class="badge badge-julia">Julia</span>
+                        <a href="https://github.com/varnerlab/CHEME-5820-Lectures-Spring-2026.git">GitHub &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card software-card">
+                    <h3>POETs.jl</h3>
+                    <p>JuPOETs: A constrained multiobjective optimization approach to estimate biochemical model ensembles using Pareto optimal ensemble techniques.</p>
+                    <div class="meta">
+                        <span class="badge badge-julia">Julia</span>
+                        <a href="https://github.com/varnerlab/POETs.jl.git">GitHub &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card software-card">
+                    <h3>SEML</h3>
+                    <p>Simplified English Modeling Language for constructing biological models in Julia using a human-readable syntax.</p>
+                    <div class="meta">
+                        <span class="badge badge-julia">Julia</span>
+                        <a href="https://github.com/varnerlab/SEML">GitHub &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card software-card">
+                    <h3>DOPS</h3>
+                    <p>Dynamic Optimization with Particle Swarms: A meta-heuristic for parameter estimation in biochemical models.</p>
+                    <div class="meta">
+                        <span class="badge badge-matlab">MATLAB</span>
+                        <a href="https://github.com/varnerlab/Publication_DOPS_MATLAB_code_repository">GitHub &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card software-card">
+                    <h3>Kinetic CFPS Model</h3>
+                    <p>Genome scale sequence specific dynamic model of cell-free protein synthesis in <i>E. coli</i>.</p>
+                    <div class="meta">
+                        <span class="badge badge-julia">Julia</span>
+                        <a href="https://github.com/varnerlab/Kinetic-CFPS-Model-Publication-Code">GitHub &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card software-card">
+                    <h3>Sequence-Specific FBA CFPS</h3>
+                    <p>Sequence specific constraint-based modeling framework for cell-free protein synthesis systems.</p>
+                    <div class="meta">
+                        <span class="badge badge-julia">Julia</span>
+                        <a href="https://github.com/varnerlab/Sequence-Specific-FBA-CFPS-Publication-Code">GitHub &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card software-card">
+                    <h3>HCM-FBA Model</h3>
+                    <p>Hybrid cybernetic modeling with flux balance analysis for effective dynamic models of metabolic networks.</p>
+                    <div class="meta">
+                        <span class="badge badge-julia">Julia</span>
+                        <a href="https://github.com/varnerlab/HCM-FBA-Model-Code.git">GitHub &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card software-card">
+                    <h3>Hybrid Coagulation Model</h3>
+                    <p>Dynamic modeling of the human coagulation cascade using reduced order effective kinetic models.</p>
+                    <div class="meta">
+                        <span class="badge badge-python">Python</span>
+                        <a href="https://github.com/jeffreyvarner/HybridCoagulationModel_v1.git">GitHub &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card software-card">
+                    <h3>Complement Model</h3>
+                    <p>Reduced order modeling and analysis of the human complement system.</p>
+                    <div class="meta">
+                        <span class="badge badge-julia">Julia</span>
+                        <a href="https://github.com/varnerlab/Complement_model_repository.git">GitHub &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card software-card">
+                    <h3>Glyco Model</h3>
+                    <p>Model-guided metabolic engineering for improving designer glycan production in <i>E. coli</i>.</p>
+                    <div class="meta">
+                        <span class="badge badge-matlab">MATLAB</span>
+                        <a href="https://github.com/varnerlab/Glyco-model-code-MATLAB">GitHub &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card software-card">
+                    <h3>HL60 TF Model</h3>
+                    <p>Effective model of the retinoic acid induced HL-60 differentiation program signal transduction.</p>
+                    <div class="meta">
+                        <span class="badge badge-julia">Julia</span>
+                        <a href="https://github.com/varnerlab/HL60-TF-Model_v4">GitHub &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card software-card">
+                    <h3>Prostate Model</h3>
+                    <p>Modeling and analysis of hormone and mitogenic signal integration in prostate cancer.</p>
+                    <div class="meta">
+                        <span class="badge badge-octave">Octave</span>
+                        <a href="https://github.com/varnerlab/Prostate_model_code_repository">GitHub &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card software-card">
+                    <h3>Reduced EMT Model</h3>
+                    <p>Population heterogeneity in the epithelial to mesenchymal transition controlled by NFAT and phosphorylated Sp1.</p>
+                    <div class="meta">
+                        <span class="badge badge-julia">Julia</span>
+                        <a href="https://github.com/varnerlab/Reduced_EMT_Model">GitHub &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="card software-card">
+                    <h3>Fibrinolysis Model</h3>
+                    <p>Kinetic modeling of coagulation and fibrinolysis with platelets.</p>
+                    <div class="meta">
+                        <span class="badge badge-julia">Julia</span>
+                        <a href="https://github.com/varnerlab/Fibrinolysis_model_w_platelets">GitHub &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                Varner Lab &middot; Cornell University &middot; Ithaca, NY 14850
+            </div>
+            <ul class="footer-links">
+                <li><a href="mailto:jdv27@cornell.edu">Contact</a></li>
+                <li><a href="https://github.com/varnerlab">GitHub</a></li>
+                <li><a href="https://scholar.google.com/citations?user=o1UDaMwAAAAJ&hl=en">Google Scholar</a></li>
+                <li><a href="https://www.linkedin.com/in/jeffrey-varner-15b0045/">LinkedIn</a></li>
+                <li><a href="https://www.engineering.cornell.edu/faculty-directory/jeffrey-d-varner">Cornell</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
