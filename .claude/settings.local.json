@@ -16,7 +16,8 @@
       "WebFetch(domain:api.semanticscholar.org)",
       "WebFetch(domain:api.openalex.org)",
       "WebFetch(domain:classes.cornell.edu)",
-      "WebFetch(domain:ecornell.cornell.edu)"
+      "WebFetch(domain:ecornell.cornell.edu)",
+      "WebFetch(domain:github.com)"
     ]
   }
 }
