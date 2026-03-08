@@ -20,7 +20,11 @@
       "WebFetch(domain:github.com)",
       "Bash(whois:*)",
       "WebFetch(domain:raw.githubusercontent.com)",
-      "Bash(dig:*)"
+      "Bash(dig:*)",
+      "WebFetch(domain:varnerlab.org)",
+      "Bash(git:*)",
+      "Bash(python3:*)",
+      "Bash(lsof:*)"
     ]
   }
 }
