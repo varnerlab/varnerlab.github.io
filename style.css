@@ -21,12 +21,17 @@
     padding: 0;
 }
 
+html {
+    /* Base size for all rem units; 125% = 20px (default is 16px) */
+    font-size: 125%;
+}
+
 body {
     font-family: var(--font-stack);
     font-weight: 300;
     background-color: var(--color-bg);
     color: var(--color-text);
-    line-height: 1.6;
+    line-height: 1.45;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -339,7 +344,8 @@ main {
     flex-wrap: wrap;
 }
 
-.pub-card .pub-links a {
+.pub-card .pub-links a,
+.course-card .pub-links a {
     font-size: 0.84rem;
     font-weight: 400;
     letter-spacing: 0.01em;
