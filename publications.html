@@ -1,731 +1,444 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>Publications | Varner Lab</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publications | Varner Lab</title>
+<meta name="description" content="Peer-reviewed articles and preprints from the Varner Lab, 2000 to present.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0}
+html{scroll-behavior:smooth}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+::selection{background:#BC5A2E;color:#fff}
+</style>
+<style>
+.cch1{transition:color .2s ease,border-color .2s ease,background .2s ease}.cch1:hover{color:#1B1916 !important}
+.cch2{transition:color .2s ease,border-color .2s ease,background .2s ease}.cch2:hover{border-color:#BC5A2E !important;color:#BC5A2E !important}
+.cch3{transition:color .2s ease,border-color .2s ease,background .2s ease}.cch3:hover{color:#9A4520 !important}
+.cch4{transition:color .2s ease,border-color .2s ease,background .2s ease}.cch4:hover{color:#fff !important}
+</style>
 </head>
-<body>
+<body style="margin:0">
+<div style="background:#F4F2EC;color:#1B1916;font-family:'IBM Plex Sans',system-ui,sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;min-height:100vh">
 
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="navbar-brand">VARNERLAB</a>
-            <button class="navbar-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.navbar-links').classList.toggle('open')">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="navbar-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="publications.html" class="active">Publications</a></li>
-                <li><a href="software.html">Software</a></li>
-                <li><a href="teaching.html">Teaching</a></li>
-            </ul>
-        </div>
+  <!-- ===== NAV ===== -->
+  <nav style="position:sticky;top:0;z-index:50;background:rgba(244,242,236,0.86);backdrop-filter:blur(10px);border-bottom:1px solid #E2DDD2">
+    <div style="max-width:1180px;margin:0 auto;padding:0 32px;height:68px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+      <a href="index.html" style="display:flex;align-items:center;gap:11px">
+        <span style="width:10px;height:10px;background:#BC5A2E;display:inline-block"></span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:15px;letter-spacing:0.16em">VARNER LAB</span>
+      </a>
+      <div style="display:flex;align-items:center;gap:30px;font-size:14.5px;flex-wrap:wrap">
+        <a href="index.html" style="color:#5F5A51;padding:4px 0;border-bottom:2px solid transparent" class="cch1">Home</a>
+        <a href="publications.html" style="color:#BC5A2E;padding:4px 0;border-bottom:2px solid #BC5A2E">Publications</a>
+        <a href="software.html" style="color:#5F5A51;padding:4px 0;border-bottom:2px solid transparent" class="cch1">Software</a>
+        <a href="teaching.html" style="color:#5F5A51;padding:4px 0;border-bottom:2px solid transparent" class="cch1">Teaching</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <header style="max-width:1180px;margin:0 auto;padding:72px 32px 0">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:0.2em;text-transform:uppercase;color:#BC5A2E">Publications</div>
+    <h1 style="font-family:'IBM Plex Serif',Georgia,serif;font-weight:500;font-size:clamp(34px,4.6vw,52px);line-height:1.05;letter-spacing:-0.02em;margin:18px 0 0">Peer-reviewed articles &amp; preprints</h1>
+    <p style="font-size:17.5px;color:#5F5A51;max-width:60ch;margin:18px 0 0">Seventy-plus publications spanning 2000 to the present, with links to code and data repositories. A complete record is also available on <a href="https://scholar.google.com/citations?user=o1UDaMwAAAAJ&hl=en" style="color:#BC5A2E;border-bottom:1px solid #E3B79F">Google Scholar</a>.</p>
+
+    <nav style="display:flex;flex-wrap:wrap;gap:7px;margin:34px 0 0;padding-bottom:8px">
+      <a href="#y2026" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#5F5A51;border:1px solid #DAD4C8;padding:5px 11px;background:#FBFAF6" class="cch2">2026</a>
+      <a href="#y2024" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#5F5A51;border:1px solid #DAD4C8;padding:5px 11px;background:#FBFAF6" class="cch2">2024</a>
+      <a href="#y2023" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#5F5A51;border:1px solid #DAD4C8;padding:5px 11px;background:#FBFAF6" class="cch2">2023</a>
+      <a href="#y2022" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#5F5A51;border:1px solid #DAD4C8;padding:5px 11px;background:#FBFAF6" class="cch2">2022</a>
+      <a href="#y2020" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#5F5A51;border:1px solid #DAD4C8;padding:5px 11px;background:#FBFAF6" class="cch2">2020</a>
+      <a href="#y2019" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#5F5A51;border:1px solid #DAD4C8;padding:5px 11px;background:#FBFAF6" class="cch2">2019</a>
+      <a href="#y2018" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#5F5A51;border:1px solid #DAD4C8;padding:5px 11px;background:#FBFAF6" class="cch2">2018</a>
+      <a href="#y2017" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#5F5A51;border:1px solid #DAD4C8;padding:5px 11px;background:#FBFAF6" class="cch2">2017</a>
+      <a href="#y2016" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#5F5A51;border:1px solid #DAD4C8;padding:5px 11px;background:#FBFAF6" class="cch2">2016</a>
+      <a href="#y2015" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#5F5A51;border:1px solid #DAD4C8;padding:5px 11px;background:#FBFAF6" class="cch2">2015</a>
+      <a href="#yold" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#5F5A51;border:1px solid #DAD4C8;padding:5px 11px;background:#FBFAF6" class="cch2">2000–2014</a>
     </nav>
+  </header>
 
-    <section class="page-header">
-        <div class="container">
-            <h1>Publications</h1>
-            <p>Peer-reviewed articles and preprints with links to code and data repositories.</p>
+  <main style="max-width:1180px;margin:0 auto;padding:24px 32px 88px">
+
+    <!-- 2026 -->
+    <div id="y2026" style="scroll-margin-top:88px;display:flex;align-items:baseline;gap:16px;margin:40px 0 4px">
+      <span style="font-family:'IBM Plex Serif',Georgia,serif;font-size:30px;font-weight:500">2026</span>
+      <span style="flex:1;height:1px;background:#E2DDD2"></span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#9A948A;letter-spacing:0.12em">10 PAPERS</span>
+    </div>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Continuous Hidden Markov Models for Equity Returns: Heavy-Tail Emission Families and Regime-Conditional Value-at-Risk</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Alswaidan A, Jin C, Varner JD (2026) · <i>arXiv</i> 2606.23492</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://arxiv.org/abs/2606.23492" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Preprint &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Synthetic American Option Pricing via Jump-HMM-Driven Heston Implied Volatility</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Sun J, Jin Z, Zhang J, Varner JD (2026) · <i>arXiv</i> 2605.13998</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://arxiv.org/abs/2605.13998" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Preprint &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Computational framework for multistep metabolic pathway design</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Zhang PZ, Varner JD (2026) · <i>arXiv</i> 2604.13471</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://arxiv.org/abs/2604.13471" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Preprint &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Validated Synthetic Patient Generation for Small Longitudinal Cohorts: Coagulation Dynamics Across Pregnancy</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Varner JD, Bravo MC, McBride C, Orfeo T, Bernstein I (2026) · Accepted, <i>npj Systems Biology and Applications</i></div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://arxiv.org/abs/2604.07557" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Preprint &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">ParetoEnsembles.jl: A Julia Package for Multiobjective Parameter Estimation Using Pareto Optimal Ensemble Techniques</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Varner JD (2026) · <i>arXiv</i> 2603.29986</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://arxiv.org/abs/2603.29986" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Preprint &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Conditioning Protein Generation via Hopfield Pattern Multiplicity</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Varner JD (2026) · <i>arXiv</i> 2603.20115</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://arxiv.org/abs/2603.20115" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Preprint &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">BSTModelKit.jl: A Julia Package for Constructing, Solving, and Analyzing Biochemical Systems Theory Models</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Vadhin S, Varner JD (2026) · <i>arXiv</i> 2603.19115</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://arxiv.org/abs/2603.19115" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Preprint &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Training-Free Generation of Protein Sequences from Small Family Alignments via Stochastic Attention</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Varner JD (2026) · Submitted to <i>PNAS</i> · <i>arXiv</i> 2603.14717</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://arxiv.org/abs/2603.14717" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Preprint &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Hybrid Hidden Markov Model for Modeling Equity Excess Growth Rate Dynamics: A Discrete-State Approach with Jump-Diffusion</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Alswaidan A, Varner JD (2026) · Submitted to <i>Journal of Data and Information Quality</i></div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://arxiv.org/abs/2603.10202" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Preprint &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Stochastic Attention via Langevin Dynamics on the Modern Hopfield Energy</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Alswaidan A, Varner JD (2026) · <i>arXiv</i> 2603.06875</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://arxiv.org/abs/2603.06875" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Preprint &rarr;</a></div>
+    </article>
+
+    <!-- 2024 -->
+    <div id="y2024" style="scroll-margin-top:88px;display:flex;align-items:baseline;gap:16px;margin:48px 0 4px">
+      <span style="font-family:'IBM Plex Serif',Georgia,serif;font-size:30px;font-weight:500">2024</span>
+      <span style="flex:1;height:1px;background:#E2DDD2"></span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#9A948A;letter-spacing:0.12em">3 PAPERS</span>
+    </div>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">MarketGPT: Developing a pre-trained transformer (GPT) for modeling financial time series</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Wheeler A, Varner JD (2024) · <i>arXiv</i> 2411.16585</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://arxiv.org/abs/2411.16585" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Preprint &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Scalable agent-based modeling for complex financial market simulations</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Wheeler A, Varner JD (2024) · <i>arXiv</i> 2312.14903</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://arxiv.org/abs/2312.14903" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Preprint &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Comparison of rapid-, kaolin-, and native-TEG parameters in burn patient cohorts with acute burn-induced coagulopathy and abnormal fibrinolytic function</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Keyloun JW, Le TD, Moffatt LT, Orfeo T, McLawhorn MM, Bravo MC, et al., Varner JD (2024) · <i>Journal of Burn Care &amp; Research</i> 45(1):70–79</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://doi.org/10.1093/jbcr/irad152" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a></div>
+    </article>
+
+    <!-- 2023 -->
+    <div id="y2023" style="scroll-margin-top:88px;display:flex;align-items:baseline;gap:16px;margin:48px 0 4px">
+      <span style="font-family:'IBM Plex Serif',Georgia,serif;font-size:30px;font-weight:500">2023</span>
+      <span style="flex:1;height:1px;background:#E2DDD2"></span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#9A948A;letter-spacing:0.12em">5 PAPERS</span>
+    </div>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Convergent approaches to delineate the metabolic regulation of tumor invasion by hyaluronic acid biosynthesis</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Shimpi AA, Tan ML, Vilkhovoy M, Dai D, Roberts LDM, Kuo JCH, Huang L, et al., Varner JD (2023) · <i>Advanced Healthcare Materials</i> 12(14):2202224</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://doi.org/10.1002/adhm.202202224" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Endothelial cells metabolically regulate breast cancer invasion toward a microvessel</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Tan ML, Jenkins-Johnston N, Huang S, Schutrum B, Vadhin S, Adhikari A, et al., Varner JD, Fischbach C (2023) · <i>APL Bioengineering</i> 7(4):046116</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://doi.org/10.1063/5.0171109" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Virtual high-throughput screening of vapor-deposited amphiphilic polymers for inhibiting biofilm formation</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Feng Z, Cheng Y, Khlyustova A, Wani A, Franklin T, Varner JD, Hook AL, Yang R (2023) · <i>Advanced Materials Technologies</i> 8(13):2201533</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://doi.org/10.1002/admt.202201533" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Integrated constraint-based modeling of <i>E. coli</i> cell-free protein synthesis</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Vilkhovoy M, Dammalapati S, Vadhin S, Adhikari A, Varner JD (2023) · <i>bioRxiv</i> 2023.02.10.528035</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://www.biorxiv.org/content/10.1101/2023.02.10.528035v1" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Preprint &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Modeling and analysis of a cell-free gluconate responsive biosensor</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Adhikari A, Murti A, Narayanan AM, Lim HE, Varner JD (2023) · <i>bioRxiv</i> 2023.01.10.523462</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://www.biorxiv.org/content/10.1101/2023.01.10.523462v1" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Preprint &rarr;</a></div>
+    </article>
+
+    <!-- 2022 -->
+    <div id="y2022" style="scroll-margin-top:88px;display:flex;align-items:baseline;gap:16px;margin:48px 0 4px">
+      <span style="font-family:'IBM Plex Serif',Georgia,serif;font-size:30px;font-weight:500">2022</span>
+      <span style="flex:1;height:1px;background:#E2DDD2"></span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#9A948A;letter-spacing:0.12em">2 PAPERS</span>
+    </div>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Assessing factor V antigen and degradation products in burn and trauma patients</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Keyloun JW, Le TD, Orfeo T, Brummel-Ziedins KE, Bravo MC, Kaye MD, et al., Varner JD (2022) · <i>Journal of Surgical Research</i> 274:169–177</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://doi.org/10.1016/j.jss.2021.12.049" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Constructing cell-free expression systems for low-cost access</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Guzman-Chavez F, Arce A, Adhikari A, Vadhin S, Pedroza-Garcia JA, et al., Varner JD, Federici F, Haseloff J (2022) · <i>ACS Synthetic Biology</i> 11(3):1114–1128</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://doi.org/10.1021/acssynbio.1c00342" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a></div>
+    </article>
+
+    <!-- 2020 -->
+    <div id="y2020" style="scroll-margin-top:88px;display:flex;align-items:baseline;gap:16px;margin:48px 0 4px">
+      <span style="font-family:'IBM Plex Serif',Georgia,serif;font-size:30px;font-weight:500">2020</span>
+      <span style="flex:1;height:1px;background:#E2DDD2"></span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#9A948A;letter-spacing:0.12em">4 PAPERS</span>
+    </div>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Engineering orthogonal human O-linked glycoprotein biosynthesis in bacteria</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Natarajan A, Jaroentomeechai T, Cabrera-Sánchez M, Mohammed JC, Cox EC, Young O, et al., Varner JD, Azadi P, DeLisa MP (2020) · <i>Nature Chemical Biology</i> 16(10):1062–1070</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://doi.org/10.1038/s41589-020-0595-9" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Effective biophysical modeling of cell-free transcription and translation processes</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Adhikari A, Vilkhovoy M, Vadhin S, Lim HE, Varner JD (2020) · <i>Frontiers in Bioengineering and Biotechnology</i> 8:539081</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://doi.org/10.3389/fbioe.2020.539081" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">The evolution of cell-free biomanufacturing</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Vilkhovoy M, Adhikari A, Vadhin S, Varner JD (2020) · <i>Processes</i> 8(6):675</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://www.mdpi.com/2227-9717/8/6/675" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Genome scale sequence specific dynamic model of cell-free protein synthesis in <i>E. coli</i></div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Horvath N, Vilkhovoy M, Wayman JA, Calhoun K, Swartz J, Varner JD (2020) · <i>Metabolic Engineering Communications</i> 10:e00113</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://pubmed.ncbi.nlm.nih.gov/32280586/" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a><a href="https://github.com/varnerlab/Kinetic-CFPS-Model-Publication-Code" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#7A746A" class="cch1">Code (Julia) &rarr;</a></div>
+    </article>
+
+    <!-- 2019 -->
+    <div id="y2019" style="scroll-margin-top:88px;display:flex;align-items:baseline;gap:16px;margin:48px 0 4px">
+      <span style="font-family:'IBM Plex Serif',Georgia,serif;font-size:30px;font-weight:500">2019</span>
+      <span style="flex:1;height:1px;background:#E2DDD2"></span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#9A948A;letter-spacing:0.12em">6 PAPERS</span>
+    </div>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Absolute quantification of cell-free protein synthesis metabolism by reversed-phase liquid chromatography–mass spectrometry</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Vilkhovoy M, Dai D, Vadhin S, Adhikari A, Varner JD (2019) · <i>Journal of Visualized Experiments</i> (153):e60329</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://pubmed.ncbi.nlm.nih.gov/31710042/" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Improving designer glycan production in <i>Escherichia coli</i> through model-guided metabolic engineering</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Wayman JA, Glasscock C, Mansell TJ, DeLisa MP, Varner JD (2019) · <i>Metabolic Engineering Communications</i> 9:e00088</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://doi.org/10.1016/j.mec.2019.e00088" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a><a href="https://github.com/varnerlab/Glyco-model-code-MATLAB" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#7A746A" class="cch1">Code (MATLAB) &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Analysis of the role of thrombomodulin in all-trans retinoic acid treatment of coagulation disorders in cancer patients</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Ghaffari H, Varner JD, Petzold LR (2019) · <i>Theoretical Biology and Medical Modelling</i> 16:3</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://pubmed.ncbi.nlm.nih.gov/30764845/" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Retinoic acid and FICZ combination therapy reveals putative targets for enhancing response in non-APL AML</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Bunaciu RP, MacDonald RJ, Jensen HA, Gao F, Wang X, Johnson L, Varner JD, Yen A (2019) · <i>Leukemia &amp; Lymphoma</i> 60(7):1697–1707</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://pubmed.ncbi.nlm.nih.gov/30570341/" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">SEML: A Simplified English Modeling Language</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Zhang Z, Varner JD (2019) · <i>IFAC-PapersOnLine</i> 52:121–128</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://doi.org/10.1016/j.ifacol.2019.12.246" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a><a href="https://github.com/varnerlab/SEML" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#7A746A" class="cch1">Code (Julia) &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Kinetic modeling of coagulation and fibrinolysis with platelets</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">LeCover R, et al., Varner JD (2019) · <i>IFAC-PapersOnLine</i> 52:94–100</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://doi.org/10.1016/j.ifacol.2019.12.242" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a><a href="https://github.com/varnerlab/Fibrinolysis_model_w_platelets" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#7A746A" class="cch1">Code (Julia) &rarr;</a></div>
+    </article>
+
+    <!-- 2018 -->
+    <div id="y2018" style="scroll-margin-top:88px;display:flex;align-items:baseline;gap:16px;margin:48px 0 4px">
+      <span style="font-family:'IBM Plex Serif',Georgia,serif;font-size:30px;font-weight:500">2018</span>
+      <span style="flex:1;height:1px;background:#E2DDD2"></span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#9A948A;letter-spacing:0.12em">5 PAPERS</span>
+    </div>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Multi-scale computational study of the Warburg effect, reverse Warburg effect and glutamine addiction in solid tumors</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Shan M, Dai D, Vudem A, Varner JD, Stroock AD (2018) · <i>PLoS Computational Biology</i> 14(12):e1006584</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://pubmed.ncbi.nlm.nih.gov/30532226/" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Sequence specific modeling of <i>E. coli</i> cell-free protein synthesis</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Vilkhovoy M, Horvath N, Shih C-H, Wayman JA, Calhoun K, Swartz J, Varner JD (2018) · <i>ACS Synthetic Biology</i> 7(8):1844–1857</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://doi.org/10.1021/acssynbio.7b00465" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a><a href="https://github.com/varnerlab/Sequence-Specific-FBA-CFPS-Publication-Code" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#7A746A" class="cch1">Code (Julia) &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Src family kinase inhibitor bosutinib enhances retinoic acid-induced differentiation of HL-60 leukemia cells</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">MacDonald RJ, Bunaciu RP, Ip V, Dai D, Tran D, Varner JD, Yen A (2018) · <i>Leukemia &amp; Lymphoma</i> 59(10):2458–2468</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://pubmed.ncbi.nlm.nih.gov/29569971/" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Potential for subsets of wt-NPM1 primary AML blasts to respond to retinoic acid treatment</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Bunaciu RP, MacDonald RJ, Gao F, Johnson LM, Varner JD, Wang X, Nataraj S, Guzman ML, Yen A (2018) · <i>Oncotarget</i> 9(3):4134–4149</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://pubmed.ncbi.nlm.nih.gov/29423110/" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Dynamic constraint-based model of cell-free protein production</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Dai D, Horvath N, Varner JD (2018) · <i>Processes</i> 6(8):132</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://www.mdpi.com/2227-9717/6/8/132" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a><a href="https://github.com/varnerlab/publication_cell_free_dFBA_repository" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#7A746A" class="cch1">Code (Julia) &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Dynamic Optimization with Particle Swarms (DOPS)</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Sagar A, LeCover R, Shoemaker C, Varner JD (2018) · <i>BMC Systems Biology</i> 12:87</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://doi.org/10.1186/s12918-018-0610-x" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a><a href="https://github.com/varnerlab/Publication_DOPS_MATLAB_code_repository" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#7A746A" class="cch1">Code (MATLAB) &rarr;</a></div>
+    </article>
+
+    <!-- 2017 -->
+    <div id="y2017" style="scroll-margin-top:88px;display:flex;align-items:baseline;gap:16px;margin:48px 0 4px">
+      <span style="font-family:'IBM Plex Serif',Georgia,serif;font-size:30px;font-weight:500">2017</span>
+      <span style="flex:1;height:1px;background:#E2DDD2"></span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#9A948A;letter-spacing:0.12em">3 PAPERS</span>
+    </div>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Reduced order modeling and analysis of the human complement system</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Sagar A, Dai W, Minot M, LeCover R, Varner JD (2017) · <i>PLoS ONE</i> 12(11):e0187373</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://doi.org/10.1371/journal.pone.0187373" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a><a href="https://github.com/varnerlab/Complement_model_repository.git" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#7A746A" class="cch1">Code (Julia) &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">An effective model of the retinoic acid induced HL-60 differentiation program</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Tasseff R, Jensen HA, Congleton J, Dai D, Rogers KV, Sagar A, Bunaciu RP, Yen A, Varner JD (2017) · <i>Scientific Reports</i> 7:14327</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://doi.org/10.1038/s41598-017-14523-5" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a><a href="https://github.com/varnerlab/HL60-TF-Model_v4" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#7A746A" class="cch1">Code (Julia) &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">JuPOETs: A constrained multiobjective optimization approach to estimate biochemical model ensembles in Julia</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Bassen DM, Vilkhovoy M, Minot M, Butcher JT, Varner JD (2017) · <i>BMC Systems Biology</i> 11:10</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://doi.org/10.1186/s12918-016-0380-2" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a><a href="https://github.com/varnerlab/POETs.jl.git" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#7A746A" class="cch1">Code (Julia) &rarr;</a></div>
+    </article>
+
+    <!-- 2016 -->
+    <div id="y2016" style="scroll-margin-top:88px;display:flex;align-items:baseline;gap:16px;margin:48px 0 4px">
+      <span style="font-family:'IBM Plex Serif',Georgia,serif;font-size:30px;font-weight:500">2016</span>
+      <span style="flex:1;height:1px;background:#E2DDD2"></span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#9A948A;letter-spacing:0.12em">4 PAPERS</span>
+    </div>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Population heterogeneity in the epithelial to mesenchymal transition is controlled by NFAT and phosphorylated Sp1</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Gould R, Bassen DM, Chakrabarti A, Varner JD, Butcher J (2016) · <i>PLoS Computational Biology</i> 12(12):e1005251</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://doi.org/10.1371/journal.pcbi.1005251" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a><a href="https://github.com/varnerlab/Reduced_EMT_Model" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#7A746A" class="cch1">Code (Julia) &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Differential contributions of intrinsic and extrinsic pathways to thrombin generation in adult, maternal and cord plasma samples</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Rice NT, Szlam F, Varner JD, Bernstein PS, Szlam AD, Tanaka KA (2016) · <i>PLoS ONE</i> 11(5):e0154127</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://pubmed.ncbi.nlm.nih.gov/27196067/" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Hybrid cybernetic modeling with flux balance analysis</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Vilkhovoy M, Minot M, Varner JD (2016) · <i>bioRxiv</i> 047316</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://www.biorxiv.org/content/10.1101/047316v2" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Preprint &rarr;</a><a href="https://github.com/varnerlab/HCM-FBA-Model-Code.git" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#7A746A" class="cch1">Code (Julia) &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Prostate signal transduction model</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Rogers K, Wayman J, Tasseff R, Gee C, DeLisa M, Varner JD (2016) · <i>bioRxiv</i> 058552</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://www.biorxiv.org/content/10.1101/058552v1" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Preprint &rarr;</a><a href="https://github.com/varnerlab/Prostate_model_code_repository" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#7A746A" class="cch1">Code (Octave) &rarr;</a></div>
+    </article>
+
+    <!-- 2015 -->
+    <div id="y2015" style="scroll-margin-top:88px;display:flex;align-items:baseline;gap:16px;margin:48px 0 4px">
+      <span style="font-family:'IBM Plex Serif',Georgia,serif;font-size:30px;font-weight:500">2015</span>
+      <span style="flex:1;height:1px;background:#E2DDD2"></span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#9A948A;letter-spacing:0.12em">5 PAPERS</span>
+    </div>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Induced myelomonocytic differentiation in leukemia cells is accompanied by noncanonical transcription factor expression</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Jensen HA, Yourish HB, Bunaciu RP, Varner JD, Yen A (2015) · <i>FEBS Open Bio</i> 5:789–800</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://pubmed.ncbi.nlm.nih.gov/26566473/" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">FICZ modulates the signalsome responsible for RA-induced differentiation of HL-60 myeloblastic leukemia cells</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Bunaciu RP, Jensen HA, MacDonald RJ, LaTocha DH, Varner JD, Yen A (2015) · <i>PLoS ONE</i> 10(8):e0135668</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://pubmed.ncbi.nlm.nih.gov/26287494/" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Generating effective models and parameters for RNA genetic circuits</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Hu CY, Varner JD, Lucks JB (2015) · <i>ACS Synthetic Biology</i> 4(8):914–926</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://doi.org/10.1021/acssynbio.5b00077" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">GW5074 and PP2 kinase inhibitors implicate nontraditional c-Raf and Lyn function as drivers of retinoic acid-induced maturation</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Jensen HA, Bunaciu RP, Varner JD, Yen A (2015) · <i>Cell Signalling</i> 27(6):1198–1207</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://pubmed.ncbi.nlm.nih.gov/25817574/" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a></div>
+    </article>
+    <article style="padding:22px 4px;border-bottom:1px solid #E2DDD2">
+      <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:17.5px;font-weight:500;line-height:1.4">Reduced order extrinsic coagulation model</div>
+      <div style="font-size:14px;color:#5F5A51;margin-top:6px">Sagar A, Varner JD (2015) · <i>Processes</i> 3(1):178–203</div>
+      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:10px"><a href="https://www.mdpi.com/2227-9717/3/1/178" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch3">Paper &rarr;</a><a href="https://github.com/jeffreyvarner/HybridCoagulationModel_v1.git" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#7A746A" class="cch1">Code (Python) &rarr;</a></div>
+    </article>
+
+    <!-- 2000–2014 -->
+    <div id="yold" style="scroll-margin-top:88px;display:flex;align-items:baseline;gap:16px;margin:48px 0 4px">
+      <span style="font-family:'IBM Plex Serif',Georgia,serif;font-size:30px;font-weight:500">2000–2014</span>
+      <span style="flex:1;height:1px;background:#E2DDD2"></span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#9A948A;letter-spacing:0.12em">EARLIER WORK</span>
+    </div>
+    <article style="padding:20px 4px;border-bottom:1px solid #E2DDD2"><div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:16.5px;font-weight:500;line-height:1.4">Retinoic acid therapy resistance progresses from unilineage to bilineage in HL-60 leukemic blasts</div><div style="font-size:13.5px;color:#5F5A51;margin-top:5px">Jensen HA, Bunaciu RP, Ibabao CN, Myers R, Varner JD, Yen A (2014) · <i>PLoS ONE</i> 9(6):e98929 · <a href="https://pubmed.ncbi.nlm.nih.gov/24922062/" style="color:#BC5A2E">Paper &rarr;</a></div></article>
+    <article style="padding:20px 4px;border-bottom:1px solid #E2DDD2"><div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:16.5px;font-weight:500;line-height:1.4">Ubiquibodies, synthetic E3 ubiquitin ligases endowed with unnatural substrate specificity for targeted protein silencing</div><div style="font-size:13.5px;color:#5F5A51;margin-top:5px">Portnoff AD, Stephens EA, Varner JD, DeLisa MP (2014) · <i>Journal of Biological Chemistry</i> 289(11):7844–7855 · <a href="https://pubmed.ncbi.nlm.nih.gov/24474696/" style="color:#BC5A2E">Paper &rarr;</a></div></article>
+    <article style="padding:20px 4px;border-bottom:1px solid #E2DDD2"><div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:16.5px;font-weight:500;line-height:1.4">Physicochemical regulation of endothelial sprouting in a 3D microfluidic angiogenesis model</div><div style="font-size:13.5px;color:#5F5A51;margin-top:5px">Verbridge SS, Chakrabarti A, DelNero P, Kwee B, Varner JD, Stroock AD, Fischbach C (2013) · <i>J. Biomed. Mater. Res. A</i> 101(10):2948–2956 · <a href="https://pubmed.ncbi.nlm.nih.gov/23559519/" style="color:#BC5A2E">Paper &rarr;</a></div></article>
+    <article style="padding:20px 4px;border-bottom:1px solid #E2DDD2"><div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:16.5px;font-weight:500;line-height:1.4">The Src-family kinase inhibitor PP2 rescues inducible differentiation events in emergent retinoic acid-resistant myeloblastic leukemia cells</div><div style="font-size:13.5px;color:#5F5A51;margin-top:5px">Jensen HA, Styskal LE, Tasseff R, Bunaciu RP, Congleton J, Varner JD, Yen A (2013) · <i>PLoS ONE</i> 8(3):e58621 · <a href="https://pubmed.ncbi.nlm.nih.gov/23554907/" style="color:#BC5A2E">Paper &rarr;</a></div></article>
+    <article style="padding:20px 4px;border-bottom:1px solid #E2DDD2"><div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:16.5px;font-weight:500;line-height:1.4">Hierarchical approaches for systems modeling in cardiac development</div><div style="font-size:13.5px;color:#5F5A51;margin-top:5px">Gould RA, Aboulmouna LM, Varner JD, Butcher JT (2013) · <i>WIREs Systems Biology and Medicine</i> 5(3):289–305 · <a href="https://pubmed.ncbi.nlm.nih.gov/23463736/" style="color:#BC5A2E">Paper &rarr;</a></div></article>
+    <article style="padding:20px 4px;border-bottom:1px solid #E2DDD2"><div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:16.5px;font-weight:500;line-height:1.4">Multiscale models of breast cancer progression</div><div style="font-size:13.5px;color:#5F5A51;margin-top:5px">Chakrabarti A, Verbridge S, Stroock AD, Fischbach C, Varner JD (2012) · <i>Annals of Biomedical Engineering</i> 40(11):2488–2500 · <a href="https://pubmed.ncbi.nlm.nih.gov/23008097/" style="color:#BC5A2E">Paper &rarr;</a></div></article>
+    <article style="padding:20px 4px;border-bottom:1px solid #E2DDD2"><div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:16.5px;font-weight:500;line-height:1.4">Computational modeling and analysis of insulin induced eukaryotic translation initiation</div><div style="font-size:13.5px;color:#5F5A51;margin-top:5px">Lequieu J, Chakrabarti A, Nayak S, Varner JD (2011) · <i>PLoS Computational Biology</i> 7(11):e1002263 · <a href="https://pubmed.ncbi.nlm.nih.gov/22102801/" style="color:#BC5A2E">Paper &rarr;</a></div></article>
+    <article style="padding:20px 4px;border-bottom:1px solid #E2DDD2"><div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:16.5px;font-weight:500;line-height:1.4">A review of the mammalian unfolded protein response</div><div style="font-size:13.5px;color:#5F5A51;margin-top:5px">Chakrabarti A, Chen AW, Varner JD (2011) · <i>Biotechnology and Bioengineering</i> 108(12):2777–2793 · <a href="https://pubmed.ncbi.nlm.nih.gov/21809331/" style="color:#BC5A2E">Paper &rarr;</a></div></article>
+    <article style="padding:20px 4px;border-bottom:1px solid #E2DDD2"><div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:16.5px;font-weight:500;line-height:1.4">Interferon regulatory factor-1 binds c-Cbl, enhances MAPK signaling and promotes retinoic acid-induced differentiation of HL-60 cells</div><div style="font-size:13.5px;color:#5F5A51;margin-top:5px">Shen M, Bunaciu RP, Congleton J, Jensen HA, Sayam LG, Varner JD, Yen A (2011) · <i>Leukemia &amp; Lymphoma</i> 52(12):2372–2379 · <a href="https://pubmed.ncbi.nlm.nih.gov/21740303/" style="color:#BC5A2E">Paper &rarr;</a></div></article>
+    <article style="padding:20px 4px;border-bottom:1px solid #E2DDD2"><div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:16.5px;font-weight:500;line-height:1.4">Modeling and analysis of retinoic acid induced differentiation of uncommitted precursor cells</div><div style="font-size:13.5px;color:#5F5A51;margin-top:5px">Tasseff R, Nayak S, Song SO, Yen A, Varner JD (2011) · <i>Integrative Biology</i> 3(5):578–591 · <a href="https://pubmed.ncbi.nlm.nih.gov/21437295/" style="color:#BC5A2E">Paper &rarr;</a></div></article>
+    <article style="padding:20px 4px;border-bottom:1px solid #E2DDD2"><div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:16.5px;font-weight:500;line-height:1.4">Modelling and analysis of an ensemble of eukaryotic translation initiation models</div><div style="font-size:13.5px;color:#5F5A51;margin-top:5px">Nayak S, Siddiqui JK, Varner JD (2011) · <i>IET Systems Biology</i> 5(1):2–14 · <a href="https://pubmed.ncbi.nlm.nih.gov/21261397/" style="color:#BC5A2E">Paper &rarr;</a></div></article>
+    <article style="padding:20px 4px;border-bottom:1px solid #E2DDD2"><div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:16.5px;font-weight:500;line-height:1.4">Ensembles of uncertain mathematical models can identify network response to therapeutic interventions</div><div style="font-size:13.5px;color:#5F5A51;margin-top:5px">Luan D, Szlam F, Tanaka KA, Barie PS, Varner JD (2010) · <i>Molecular BioSystems</i> 6(11):2272–2286 · <a href="https://pubmed.ncbi.nlm.nih.gov/20844798/" style="color:#BC5A2E">Paper &rarr;</a></div></article>
+    <article style="padding:20px 4px;border-bottom:1px solid #E2DDD2"><div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:16.5px;font-weight:500;line-height:1.4">RAF associates with phosphorylated nuclear BubR1 during endoreduplication induced by JAK inhibition</div><div style="font-size:13.5px;color:#5F5A51;margin-top:5px">Reiterer G, Chen L, Tasseff R, Varner JD, Chen CY, Yen A (2010) · <i>Cell Cycle</i> 9(16):3297–3304 · <a href="https://pubmed.ncbi.nlm.nih.gov/20703093/" style="color:#BC5A2E">Paper &rarr;</a></div></article>
+    <article style="padding:20px 4px;border-bottom:1px solid #E2DDD2"><div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:16.5px;font-weight:500;line-height:1.4">Ensembles of signal transduction models using Pareto Optimal Ensemble Techniques (POETs)</div><div style="font-size:13.5px;color:#5F5A51;margin-top:5px">Song SO, Chakrabarti A, Varner JD (2010) · <i>Biotechnology Journal</i> 5(7):768–780 · <a href="https://pubmed.ncbi.nlm.nih.gov/20665647/" style="color:#BC5A2E">Paper &rarr;</a></div></article>
+    <article style="padding:20px 4px;border-bottom:1px solid #E2DDD2"><div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:16.5px;font-weight:500;line-height:1.4">Arsenic trioxide cooperates with all-trans retinoic acid to enhance MAPK activation and differentiation in PML-RARα negative human myeloblastic leukemia cells</div><div style="font-size:13.5px;color:#5F5A51;margin-top:5px">Nayak S, Shen M, Bunaciu RP, Bloom SE, Varner JD, Yen A (2010) · <i>Leukemia &amp; Lymphoma</i> 51(9):1734–1747 · <a href="https://pubmed.ncbi.nlm.nih.gov/20615082/" style="color:#BC5A2E">Paper &rarr;</a></div></article>
+    <article style="padding:20px 4px;border-bottom:1px solid #E2DDD2"><div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:16.5px;font-weight:500;line-height:1.4">Analysis of the molecular networks in androgen dependent and independent prostate cancer revealed fragile and robust subsystems</div><div style="font-size:13.5px;color:#5F5A51;margin-top:5px">Tasseff R, Nayak S, Salim S, Kaushik P, Rizvi N, Varner JD (2010) · <i>PLoS ONE</i> 5(1):e8864 · <a href="https://pubmed.ncbi.nlm.nih.gov/20126616/" style="color:#BC5A2E">Paper &rarr;</a></div></article>
+    <article style="padding:20px 4px;border-bottom:1px solid #E2DDD2"><div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:16.5px;font-weight:500;line-height:1.4">Anti-factor IXa aptamer reduces propagation of thrombin generation in plasma anticoagulated with warfarin</div><div style="font-size:13.5px;color:#5F5A51;margin-top:5px">Szlam F, Luan D, Bolliger D, Szlam AD, Levy JH, Varner JD, Tanaka KA (2010) · <i>Thrombosis Research</i> 125(5):e252–e258 · <a href="https://pubmed.ncbi.nlm.nih.gov/20004955/" style="color:#BC5A2E">Paper &rarr;</a></div></article>
+    <article style="padding:20px 4px;border-bottom:1px solid #E2DDD2"><div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:16.5px;font-weight:500;line-height:1.4">A hybrid model of anaerobic <i>E. coli</i> GJT001: combination of elementary flux modes and cybernetic variables</div><div style="font-size:13.5px;color:#5F5A51;margin-top:5px">Kim JI, Varner JD, Ramkrishna D (2008) · <i>Biotechnology Progress</i> 24(5):993–1006 · <a href="https://pubmed.ncbi.nlm.nih.gov/19194908/" style="color:#BC5A2E">Paper &rarr;</a></div></article>
+    <article style="padding:20px 4px;border-bottom:1px solid #E2DDD2"><div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:16.5px;font-weight:500;line-height:1.4">Engineering the spatial organization of metabolic enzymes: mimicking nature's synergy</div><div style="font-size:13.5px;color:#5F5A51;margin-top:5px">Conrado RJ, Varner JD, DeLisa MP (2008) · <i>Current Opinion in Biotechnology</i> 19(5):492–499 · <a href="https://pubmed.ncbi.nlm.nih.gov/18725290/" style="color:#BC5A2E">Paper &rarr;</a></div></article>
+    <article style="padding:20px 4px;border-bottom:1px solid #E2DDD2"><div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:16.5px;font-weight:500;line-height:1.4">A test of highly optimized tolerance reveals fragile cell-cycle mechanisms are molecular targets in clinical cancer trials</div><div style="font-size:13.5px;color:#5F5A51;margin-top:5px">Nayak S, Salim S, Luan D, Zai M, Varner JD (2008) · <i>PLoS ONE</i> 3(4):e2016 · <a href="https://pubmed.ncbi.nlm.nih.gov/18431497/" style="color:#BC5A2E">Paper &rarr;</a></div></article>
+    <article style="padding:20px 4px;border-bottom:1px solid #E2DDD2"><div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:16.5px;font-weight:500;line-height:1.4">Computationally derived points of fragility of a human cascade are consistent with current therapeutic strategies</div><div style="font-size:13.5px;color:#5F5A51;margin-top:5px">Luan D, Zai M, Varner JD (2007) · <i>PLoS Computational Biology</i> 3(7):e142 · <a href="https://pubmed.ncbi.nlm.nih.gov/17658944/" style="color:#BC5A2E">Paper &rarr;</a></div></article>
+    <article style="padding:20px 4px;border-bottom:1px solid #E2DDD2"><div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:16.5px;font-weight:500;line-height:1.4">Stochastic reaction-diffusion simulation of enzyme compartmentalization reveals improved catalytic efficiency for a synthetic metabolic pathway</div><div style="font-size:13.5px;color:#5F5A51;margin-top:5px">Conrado RJ, Mansell TJ, Varner JD, DeLisa MP (2007) · <i>Metabolic Engineering</i> 9(4):355–363 · <a href="https://pubmed.ncbi.nlm.nih.gov/17601761/" style="color:#BC5A2E">Paper &rarr;</a></div></article>
+    <article style="padding:20px 4px;border-bottom:1px solid #E2DDD2"><div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:16.5px;font-weight:500;line-height:1.4">Systems biology and the mathematical modelling of antibody-directed enzyme prodrug therapy (ADEPT)</div><div style="font-size:13.5px;color:#5F5A51;margin-top:5px">Varner JD (2005) · <i>IEE Proceedings – Systems Biology</i> 152(4):291–302 · <a href="https://pubmed.ncbi.nlm.nih.gov/16986273/" style="color:#BC5A2E">Paper &rarr;</a></div></article>
+    <article style="padding:20px 4px;border-bottom:1px solid #E2DDD2"><div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:16.5px;font-weight:500;line-height:1.4">Cybernetic model predictive control of a continuous bioreactor with cell recycle</div><div style="font-size:13.5px;color:#5F5A51;margin-top:5px">Gadkar KG, Doyle FJ III, Crowley TJ, Varner JD (2003) · <i>Biotechnology Progress</i> 19(5):1487–1497 · <a href="https://pubmed.ncbi.nlm.nih.gov/14524710/" style="color:#BC5A2E">Paper &rarr;</a></div></article>
+    <article style="padding:20px 4px;border-bottom:1px solid #E2DDD2"><div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:16.5px;font-weight:500;line-height:1.4">A mathematical model of caspase function in apoptosis</div><div style="font-size:13.5px;color:#5F5A51;margin-top:5px">Fussenegger M, Bailey JE, Varner JD (2000) · <i>Nature Biotechnology</i> 18(7):768–774 · <a href="https://doi.org/10.1038/77589" style="color:#BC5A2E">Paper &rarr;</a></div></article>
+    <article style="padding:20px 4px;border-bottom:1px solid #E2DDD2"><div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:16.5px;font-weight:500;line-height:1.4">Large-scale prediction of phenotype: concept</div><div style="font-size:13.5px;color:#5F5A51;margin-top:5px">Varner JD (2000) · <i>Biotechnology and Bioengineering</i> 69(6):664–678 · <a href="https://pubmed.ncbi.nlm.nih.gov/10918142/" style="color:#BC5A2E">Paper &rarr;</a></div></article>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer style="border-top:1px solid #E2DDD2;background:#1B1916;color:#D9D3C7">
+    <div style="max-width:1180px;margin:0 auto;padding:56px 32px 28px;display:flex;flex-wrap:wrap;gap:48px;justify-content:space-between">
+      <div style="flex:1 1 320px;max-width:420px">
+        <div style="display:flex;align-items:center;gap:11px">
+          <span style="width:10px;height:10px;background:#BC5A2E;display:inline-block"></span>
+          <span style="font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:15px;letter-spacing:0.16em;color:#F4F2EC">VARNER LAB</span>
         </div>
-    </section>
+        <p style="font-size:14.5px;line-height:1.6;color:#9A9488;margin:18px 0 0">Robert Frederick Smith School of Chemical &amp; Biomolecular Engineering, Cornell University · Ithaca, NY 14850</p>
+        <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#BC5A2E;margin:16px 0 0;letter-spacing:0.04em">Committed to Open Science</p>
+      </div>
+      <div style="flex:0 1 auto">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.14em;text-transform:uppercase;color:#6E685D">Connect</div>
+        <ul style="list-style:none;padding:0;margin:18px 0 0;display:flex;flex-direction:column;gap:11px;font-size:14.5px">
+          <li><a href="mailto:jdv27@cornell.edu" style="color:#D9D3C7" class="cch4">Email</a></li>
+          <li><a href="https://github.com/varnerlab" style="color:#D9D3C7" class="cch4">GitHub</a></li>
+          <li><a href="https://scholar.google.com/citations?user=o1UDaMwAAAAJ&hl=en" style="color:#D9D3C7" class="cch4">Google Scholar</a></li>
+          <li><a href="https://www.linkedin.com/in/jeffrey-varner-15b0045/" style="color:#D9D3C7" class="cch4">LinkedIn</a></li>
+          <li><a href="https://www.engineering.cornell.edu/faculty-directory/jeffrey-d-varner" style="color:#D9D3C7" class="cch4">Cornell Profile</a></li>
+        </ul>
+      </div>
+    </div>
+    <div style="max-width:1180px;margin:0 auto;padding:18px 32px;border-top:1px solid #322E28;font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#6E685D;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px">
+      <span>© 2026 Varner Lab</span>
+      <span>varnerlab.org</span>
+    </div>
+  </footer>
 
-    <main>
-        <div class="container">
-
-            <!-- 2026 -->
-            <div class="year-group">
-                <div class="year-label">2026</div>
-                <div class="pub-list">
-                    <article class="card pub-card">
-                        <div class="pub-title">Continuous Hidden Markov Models for Equity Returns: Heavy-Tail Emission Families and Regime-Conditional Value-at-Risk</div>
-                        <div class="pub-authors">Alswaidan A, Jin C and JD Varner (2026) <i>arXiv</i>, 2606.23492.</div>
-                        <div class="pub-links">
-                            <a href="https://arxiv.org/abs/2606.23492">Preprint &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Synthetic American Option Pricing via Jump-HMM-Driven Heston Implied Volatility</div>
-                        <div class="pub-authors">Sun J, Jin Z, Zhang J and JD Varner (2026) <i>arXiv</i>, 2605.13998.</div>
-                        <div class="pub-links">
-                            <a href="https://arxiv.org/abs/2605.13998">Preprint &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Computational framework for multistep metabolic pathway design</div>
-                        <div class="pub-authors">Zhang PZ and JD Varner (2026) <i>arXiv</i>, 2604.13471.</div>
-                        <div class="pub-links">
-                            <a href="https://arxiv.org/abs/2604.13471">Preprint &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Validated Synthetic Patient Generation for Small Longitudinal Cohorts: Coagulation Dynamics Across Pregnancy</div>
-                        <div class="pub-authors">Varner JD, Bravo MC, McBride C, Orfeo T and Bernstein I (2026) Submitted to <i>npj Systems Biology and Applications</i>.</div>
-                        <div class="pub-links">
-                            <a href="https://arxiv.org/abs/2604.07557">Preprint &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">ParetoEnsembles.jl: A Julia Package for Multiobjective Parameter Estimation Using Pareto Optimal Ensemble Techniques</div>
-                        <div class="pub-authors">JD Varner (2026) <i>arXiv</i>, 2603.29986.</div>
-                        <div class="pub-links">
-                            <a href="https://arxiv.org/abs/2603.29986">Preprint &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Conditioning Protein Generation via Hopfield Pattern Multiplicity</div>
-                        <div class="pub-authors">JD Varner (2026) <i>arXiv</i>, 2603.20115.</div>
-                        <div class="pub-links">
-                            <a href="https://arxiv.org/abs/2603.20115">Preprint &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">BSTModelKit.jl: A Julia Package for Constructing, Solving, and Analyzing Biochemical Systems Theory Models</div>
-                        <div class="pub-authors">Vadhin S and JD Varner (2026) <i>arXiv</i>, 2603.19115.</div>
-                        <div class="pub-links">
-                            <a href="https://arxiv.org/abs/2603.19115">Preprint &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Training-Free Generation of Protein Sequences from Small Family Alignments via Stochastic Attention</div>
-                        <div class="pub-authors">JD Varner (2026) <i>arXiv</i>, 2603.14717.</div>
-                        <div class="pub-links">
-                            <a href="https://arxiv.org/abs/2603.14717">Preprint &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Hybrid Hidden Markov Model for Modeling Equity Excess Growth Rate Dynamics: A Discrete-State Approach with Jump-Diffusion</div>
-                        <div class="pub-authors">Alswaidan A and JD Varner (2026) Submitted to <i>Journal of Data and Information Quality (JDIQ)</i>.</div>
-                        <div class="pub-links">
-                            <a href="https://arxiv.org/abs/2603.10202">Preprint &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Stochastic Attention via Langevin Dynamics on the Modern Hopfield Energy</div>
-                        <div class="pub-authors">Alswaidan A and JD Varner (2026) <i>arXiv</i>, 2603.06875.</div>
-                        <div class="pub-links">
-                            <a href="https://arxiv.org/abs/2603.06875">Preprint &rarr;</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <!-- 2024 -->
-            <div class="year-group">
-                <div class="year-label">2024</div>
-                <div class="pub-list">
-                    <article class="card pub-card">
-                        <div class="pub-title">MarketGPT: Developing a pre-trained transformer (GPT) for modeling financial time series</div>
-                        <div class="pub-authors">Wheeler A and JD Varner (2024) <i>arXiv</i>, 2411.16585.</div>
-                        <div class="pub-links">
-                            <a href="https://arxiv.org/abs/2411.16585">Preprint &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Scalable agent-based modeling for complex financial market simulations</div>
-                        <div class="pub-authors">Wheeler A and JD Varner (2024) <i>arXiv</i>, 2312.14903.</div>
-                        <div class="pub-links">
-                            <a href="https://arxiv.org/abs/2312.14903">Preprint &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Comparison of rapid-, kaolin-, and native-TEG parameters in burn patient cohorts with acute burn-induced coagulopathy and abnormal fibrinolytic function</div>
-                        <div class="pub-authors">Keyloun JW, Le TD, Moffatt LT, Orfeo T, McLawhorn MM, Bravo MC, ... and JD Varner (2024) <i>Journal of Burn Care &amp; Research</i>, 45(1), 70&ndash;79.</div>
-                        <div class="pub-links">
-                            <a href="https://doi.org/10.1093/jbcr/irad152">Paper &rarr;</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <!-- 2023 -->
-            <div class="year-group">
-                <div class="year-label">2023</div>
-                <div class="pub-list">
-                    <article class="card pub-card">
-                        <div class="pub-title">Convergent approaches to delineate the metabolic regulation of tumor invasion by hyaluronic acid biosynthesis</div>
-                        <div class="pub-authors">Shimpi AA, Tan ML, Vilkhovoy M, Dai D, Roberts LDM, Kuo JCH, Huang L, ... and JD Varner (2023) <i>Advanced Healthcare Materials</i>, 12(14), 2202224.</div>
-                        <div class="pub-links">
-                            <a href="https://doi.org/10.1002/adhm.202202224">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Endothelial cells metabolically regulate breast cancer invasion toward a microvessel</div>
-                        <div class="pub-authors">Tan ML, Jenkins-Johnston N, Huang S, Schutrum B, Vadhin S, Adhikari A, Williams RM, Zipfel WR, Lammerding J, JD Varner and Fischbach C (2023) <i>APL Bioengineering</i>, 7(4), 046116.</div>
-                        <div class="pub-links">
-                            <a href="https://doi.org/10.1063/5.0171109">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Virtual high-throughput screening of vapor-deposited amphiphilic polymers for inhibiting biofilm formation</div>
-                        <div class="pub-authors">Feng Z, Cheng Y, Khlyustova A, Wani A, Franklin T, JD Varner, Hook AL and Yang R (2023) <i>Advanced Materials Technologies</i>, 8(13), 2201533.</div>
-                        <div class="pub-links">
-                            <a href="https://doi.org/10.1002/admt.202201533">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Integrated constraint-based modeling of <i>E. coli</i> cell-free protein synthesis</div>
-                        <div class="pub-authors">Vilkhovoy M, Dammalapati S, Vadhin S, Adhikari A and JD Varner (2023) <i>bioRxiv</i>, doi: 10.1101/2023.02.10.528035.</div>
-                        <div class="pub-links">
-                            <a href="https://www.biorxiv.org/content/10.1101/2023.02.10.528035v1">Preprint &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Modeling and analysis of a cell-free gluconate responsive biosensor</div>
-                        <div class="pub-authors">Adhikari A, Murti A, Narayanan AM, Lim HE and JD Varner (2023) <i>bioRxiv</i>, doi: 10.1101/2023.01.10.523462.</div>
-                        <div class="pub-links">
-                            <a href="https://www.biorxiv.org/content/10.1101/2023.01.10.523462v1">Preprint &rarr;</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <!-- 2022 -->
-            <div class="year-group">
-                <div class="year-label">2022</div>
-                <div class="pub-list">
-                    <article class="card pub-card">
-                        <div class="pub-title">Assessing factor V antigen and degradation products in burn and trauma patients</div>
-                        <div class="pub-authors">Keyloun JW, Le TD, Orfeo T, Brummel-Ziedins KE, Bravo MC, Kaye MD, ... and JD Varner (2022) <i>Journal of Surgical Research</i>, 274, 169&ndash;177.</div>
-                        <div class="pub-links">
-                            <a href="https://doi.org/10.1016/j.jss.2021.12.049">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Constructing cell-free expression systems for low-cost access</div>
-                        <div class="pub-authors">Guzman-Chavez F, Arce A, Adhikari A, Vadhin S, Pedroza-Garcia JA, Gandini C, Ajioka JW, Molloy J, Sanchez-Nieto S, JD Varner, Federici F and Haseloff J (2022) <i>ACS Synthetic Biology</i>, 11(3), 1114&ndash;1128.</div>
-                        <div class="pub-links">
-                            <a href="https://doi.org/10.1021/acssynbio.1c00342">Paper &rarr;</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <!-- 2020 -->
-            <div class="year-group">
-                <div class="year-label">2020</div>
-                <div class="pub-list">
-                    <article class="card pub-card">
-                        <div class="pub-title">Engineering orthogonal human O-linked glycoprotein biosynthesis in bacteria</div>
-                        <div class="pub-authors">Natarajan A, Jaroentomeechai T, Cabrera-S&aacute;nchez M, Mohammed JC, Cox EC, Young O, Shajahan A, Vilkhovoy M, Vadhin S, JD Varner, Azadi P and DeLisa MP (2020) <i>Nature Chemical Biology</i>, 16(10), 1062&ndash;1070.</div>
-                        <div class="pub-links">
-                            <a href="https://doi.org/10.1038/s41589-020-0595-9">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Effective biophysical modeling of cell-free transcription and translation processes</div>
-                        <div class="pub-authors">Adhikari A, Vilkhovoy M, Vadhin S, Lim HE and JD Varner (2020) <i>Frontiers in Bioengineering and Biotechnology</i>, 8, 539081.</div>
-                        <div class="pub-links">
-                            <a href="https://doi.org/10.3389/fbioe.2020.539081">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">The evolution of cell-free biomanufacturing</div>
-                        <div class="pub-authors">Vilkhovoy M, Adhikari A, Vadhin S and JD Varner (2020) <i>Processes</i>, 8(6), 675.</div>
-                        <div class="pub-links">
-                            <a href="https://www.mdpi.com/2227-9717/8/6/675">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Genome scale sequence specific dynamic model of cell-free protein synthesis in <i>E. coli</i></div>
-                        <div class="pub-authors">Horvath N, Vilkhovoy M, Wayman JA, Calhoun K, Swartz J and JD Varner (2020) <i>Metabolic Engineering Communications</i>, 10, e00113.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/32280586/">Paper &rarr;</a>
-                            <a href="https://github.com/varnerlab/Kinetic-CFPS-Model-Publication-Code">Code (Julia) &rarr;</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <!-- 2019 -->
-            <div class="year-group">
-                <div class="year-label">2019</div>
-                <div class="pub-list">
-                    <article class="card pub-card">
-                        <div class="pub-title">Absolute quantification of cell-free protein synthesis metabolism by reversed-phase liquid chromatography-mass spectrometry</div>
-                        <div class="pub-authors">Vilkhovoy M, Dai D, Vadhin S, Adhikari A and JD Varner (2019) <i>Journal of Visualized Experiments</i>, (153), e60329.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/31710042/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Improving designer glycan production in <i>Escherichia coli</i> through model-guided metabolic engineering</div>
-                        <div class="pub-authors">Wayman JA, Glasscock C, Mansell TJ, DeLisa MP and JD Varner (2019) <i>Metabolic Engineering Communications</i>, 9, e00088.</div>
-                        <div class="pub-links">
-                            <a href="https://doi.org/10.1016/j.mec.2019.e00088">Paper &rarr;</a>
-                            <a href="https://github.com/varnerlab/Glyco-model-code-MATLAB">Code (MATLAB) &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Analysis of the role of thrombomodulin in all-trans retinoic acid treatment of coagulation disorders in cancer patients</div>
-                        <div class="pub-authors">Ghaffari H, JD Varner and Petzold LR (2019) <i>Theoretical Biology and Medical Modelling</i>, 16, 3.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/30764845/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Retinoic acid and 6-formylindolo(3,2-b)carbazole (FICZ) combination therapy reveals putative targets for enhancing response in non-APL AML</div>
-                        <div class="pub-authors">Bunaciu RP, MacDonald RJ, Jensen HA, Gao F, Wang X, Johnson L, JD Varner and Yen A (2019) <i>Leukemia &amp; Lymphoma</i>, 60(7), 1697&ndash;1707.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/30570341/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">SEML: A Simplified English Modeling Language</div>
-                        <div class="pub-authors">Zhang Z and JD Varner (2019) <i>IFAC-PapersOnLine</i>, 52, 121&ndash;128.</div>
-                        <div class="pub-links">
-                            <a href="https://doi.org/10.1016/j.ifacol.2019.12.246">Paper &rarr;</a>
-                            <a href="https://github.com/varnerlab/SEML">Code (Julia) &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Kinetic modeling of coagulation and fibrinolysis with platelets</div>
-                        <div class="pub-authors">LeCover R et al. (2019) <i>IFAC-PapersOnLine</i>, 52, 94&ndash;100.</div>
-                        <div class="pub-links">
-                            <a href="https://doi.org/10.1016/j.ifacol.2019.12.242">Paper &rarr;</a>
-                            <a href="https://github.com/varnerlab/Fibrinolysis_model_w_platelets">Code (Julia) &rarr;</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <!-- 2018 -->
-            <div class="year-group">
-                <div class="year-label">2018</div>
-                <div class="pub-list">
-                    <article class="card pub-card">
-                        <div class="pub-title">Multi-scale computational study of the Warburg effect, reverse Warburg effect and glutamine addiction in solid tumors</div>
-                        <div class="pub-authors">Shan M, Dai D, Vudem A, JD Varner and Stroock AD (2018) <i>PLoS Computational Biology</i>, 14(12), e1006584.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/30532226/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Sequence specific modeling of <i>E. coli</i> cell-free protein synthesis</div>
-                        <div class="pub-authors">Vilkhovoy M, Horvath N, Shih C-H, Wayman JA, Calhoun K, Swartz J and JD Varner (2018) <i>ACS Synthetic Biology</i>, 7(8), 1844&ndash;1857.</div>
-                        <div class="pub-links">
-                            <a href="https://doi.org/10.1021/acssynbio.7b00465">Paper &rarr;</a>
-                            <a href="https://github.com/varnerlab/Sequence-Specific-FBA-CFPS-Publication-Code">Code (Julia) &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Src family kinase inhibitor bosutinib enhances retinoic acid-induced differentiation of HL-60 leukemia cells</div>
-                        <div class="pub-authors">MacDonald RJ, Bunaciu RP, Ip V, Dai D, Tran D, JD Varner and Yen A (2018) <i>Leukemia &amp; Lymphoma</i>, 59(10), 2458&ndash;2468.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/29569971/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Potential for subsets of wt-NPM1 primary AML blasts to respond to retinoic acid treatment</div>
-                        <div class="pub-authors">Bunaciu RP, MacDonald RJ, Gao F, Johnson LM, JD Varner, Wang X, Nataraj S, Guzman ML and Yen A (2018) <i>Oncotarget</i>, 9(3), 4134&ndash;4149.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/29423110/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Dynamic constraint-based model of cell-free protein production</div>
-                        <div class="pub-authors">Dai D, Horvath N and JD Varner (2018) <i>Processes</i>, 6(8), 132.</div>
-                        <div class="pub-links">
-                            <a href="https://www.mdpi.com/2227-9717/6/8/132">Paper &rarr;</a>
-                            <a href="https://github.com/varnerlab/publication_cell_free_dFBA_repository">Code (Julia) &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Dynamic Optimization with Particle Swarms (DOPS)</div>
-                        <div class="pub-authors">Sagar A, LeCover R, Shoemaker C and JD Varner (2018) <i>BMC Systems Biology</i>, 12:87.</div>
-                        <div class="pub-links">
-                            <a href="https://doi.org/10.1186/s12918-018-0610-x">Paper &rarr;</a>
-                            <a href="https://github.com/varnerlab/Publication_DOPS_MATLAB_code_repository">Code (MATLAB) &rarr;</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <!-- 2017 -->
-            <div class="year-group">
-                <div class="year-label">2017</div>
-                <div class="pub-list">
-                    <article class="card pub-card">
-                        <div class="pub-title">Reduced order modeling and analysis of the human complement system</div>
-                        <div class="pub-authors">Sagar A, Dai W, Minot M, LeCover R and JD Varner (2017) <i>PLoS ONE</i>, 12(11), e0187373.</div>
-                        <div class="pub-links">
-                            <a href="https://doi.org/10.1371/journal.pone.0187373">Paper &rarr;</a>
-                            <a href="https://github.com/varnerlab/Complement_model_repository.git">Code (Julia) &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">An effective model of the retinoic acid induced HL-60 differentiation program</div>
-                        <div class="pub-authors">Tasseff R, Jensen HA, Congleton J, Dai D, Rogers KV, Sagar A, Bunaciu RP, Yen A and JD Varner (2017) <i>Scientific Reports</i>, 7, 14327.</div>
-                        <div class="pub-links">
-                            <a href="https://doi.org/10.1038/s41598-017-14523-5">Paper &rarr;</a>
-                            <a href="https://github.com/varnerlab/HL60-TF-Model_v4">Code (Julia) &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">JuPOETs: A constrained multiobjective optimization approach to estimate biochemical model ensembles in Julia</div>
-                        <div class="pub-authors">Bassen DM, Vilkhovoy M, Minot M, Butcher JT and JD Varner (2017) <i>BMC Systems Biology</i>, 11:10.</div>
-                        <div class="pub-links">
-                            <a href="https://doi.org/10.1186/s12918-016-0380-2">Paper &rarr;</a>
-                            <a href="https://github.com/varnerlab/POETs.jl.git">Code (Julia) &rarr;</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <!-- 2016 -->
-            <div class="year-group">
-                <div class="year-label">2016</div>
-                <div class="pub-list">
-                    <article class="card pub-card">
-                        <div class="pub-title">Population heterogeneity in the epithelial to mesenchymal transition is controlled by NFAT and phosphorylated Sp1</div>
-                        <div class="pub-authors">Gould R, Bassen DM, Chakrabarti A, JD Varner and Butcher J (2016) <i>PLoS Computational Biology</i>, 12(12), e1005251.</div>
-                        <div class="pub-links">
-                            <a href="https://doi.org/10.1371/journal.pcbi.1005251">Paper &rarr;</a>
-                            <a href="https://github.com/varnerlab/Reduced_EMT_Model">Code (Julia) &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Differential contributions of intrinsic and extrinsic pathways to thrombin generation in adult, maternal and cord plasma samples</div>
-                        <div class="pub-authors">Rice NT, Szlam F, JD Varner, Bernstein PS, Szlam AD and Tanaka KA (2016) <i>PLoS ONE</i>, 11(5), e0154127.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/27196067/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Hybrid cybernetic modeling with flux balance analysis</div>
-                        <div class="pub-authors">Vilkhovoy M, Minot M and JD Varner (2016) <i>bioRxiv</i>, 047316.</div>
-                        <div class="pub-links">
-                            <a href="https://www.biorxiv.org/content/10.1101/047316v2">Preprint &rarr;</a>
-                            <a href="https://github.com/varnerlab/HCM-FBA-Model-Code.git">Code (Julia) &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Prostate signal transduction model</div>
-                        <div class="pub-authors">Rogers K, Wayman J, Tasseff R, Gee C, DeLisa M and JD Varner (2016) <i>bioRxiv</i>, 058552.</div>
-                        <div class="pub-links">
-                            <a href="https://www.biorxiv.org/content/10.1101/058552v1">Preprint &rarr;</a>
-                            <a href="https://github.com/varnerlab/Prostate_model_code_repository">Code (Octave/SUNDIALS) &rarr;</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <!-- 2015 -->
-            <div class="year-group">
-                <div class="year-label">2015</div>
-                <div class="pub-list">
-                    <article class="card pub-card">
-                        <div class="pub-title">Induced myelomonocytic differentiation in leukemia cells is accompanied by noncanonical transcription factor expression</div>
-                        <div class="pub-authors">Jensen HA, Yourish HB, Bunaciu RP, JD Varner and Yen A (2015) <i>FEBS Open Bio</i>, 5, 789&ndash;800.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/26566473/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">6-Formylindolo(3,2-b)carbazole (FICZ) modulates the signalsome responsible for RA-induced differentiation of HL-60 myeloblastic leukemia cells</div>
-                        <div class="pub-authors">Bunaciu RP, Jensen HA, MacDonald RJ, LaTocha DH, JD Varner and Yen A (2015) <i>PLoS ONE</i>, 10(8), e0135668.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/26287494/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Generating effective models and parameters for RNA genetic circuits</div>
-                        <div class="pub-authors">Hu CY, JD Varner and Lucks JB (2015) <i>ACS Synthetic Biology</i>, 4(8), 914&ndash;926.</div>
-                        <div class="pub-links">
-                            <a href="https://doi.org/10.1021/acssynbio.5b00077">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">GW5074 and PP2 kinase inhibitors implicate nontraditional c-Raf and Lyn function as drivers of retinoic acid-induced maturation</div>
-                        <div class="pub-authors">Jensen HA, Bunaciu RP, JD Varner and Yen A (2015) <i>Cell Signalling</i>, 27(6), 1198&ndash;1207.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/25817574/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Reduced order extrinsic coagulation model</div>
-                        <div class="pub-authors">Sagar A and JD Varner (2015) <i>Processes</i>, 3(1), 178&ndash;203.</div>
-                        <div class="pub-links">
-                            <a href="https://www.mdpi.com/2227-9717/3/1/178">Paper &rarr;</a>
-                            <a href="https://github.com/jeffreyvarner/HybridCoagulationModel_v1.git">Code (Python) &rarr;</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <!-- 2014 -->
-            <div class="year-group">
-                <div class="year-label">2014</div>
-                <div class="pub-list">
-                    <article class="card pub-card">
-                        <div class="pub-title">Retinoic acid therapy resistance progresses from unilineage to bilineage in HL-60 leukemic blasts</div>
-                        <div class="pub-authors">Jensen HA, Bunaciu RP, Ibabao CN, Myers R, JD Varner and Yen A (2014) <i>PLoS ONE</i>, 9(6), e98929.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/24922062/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Ubiquibodies, synthetic E3 ubiquitin ligases endowed with unnatural substrate specificity for targeted protein silencing</div>
-                        <div class="pub-authors">Portnoff AD, Stephens EA, JD Varner and DeLisa MP (2014) <i>Journal of Biological Chemistry</i>, 289(11), 7844&ndash;7855.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/24474696/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <!-- 2013 -->
-            <div class="year-group">
-                <div class="year-label">2013</div>
-                <div class="pub-list">
-                    <article class="card pub-card">
-                        <div class="pub-title">Physicochemical regulation of endothelial sprouting in a 3D microfluidic angiogenesis model</div>
-                        <div class="pub-authors">Verbridge SS, Chakrabarti A, DelNero P, Kwee B, JD Varner, Stroock AD and Fischbach C (2013) <i>Journal of Biomedical Materials Research Part A</i>, 101(10), 2948&ndash;2956.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/23559519/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">The Src-family kinase inhibitor PP2 rescues inducible differentiation events in emergent retinoic acid-resistant myeloblastic leukemia cells</div>
-                        <div class="pub-authors">Jensen HA, Styskal LE, Tasseff R, Bunaciu RP, Congleton J, JD Varner and Yen A (2013) <i>PLoS ONE</i>, 8(3), e58621.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/23554907/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Hierarchical approaches for systems modeling in cardiac development</div>
-                        <div class="pub-authors">Gould RA, Aboulmouna LM, JD Varner and Butcher JT (2013) <i>WIREs Systems Biology and Medicine</i>, 5(3), 289&ndash;305.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/23463736/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <!-- 2012 -->
-            <div class="year-group">
-                <div class="year-label">2012</div>
-                <div class="pub-list">
-                    <article class="card pub-card">
-                        <div class="pub-title">Multiscale models of breast cancer progression</div>
-                        <div class="pub-authors">Chakrabarti A, Verbridge S, Stroock AD, Fischbach C and JD Varner (2012) <i>Annals of Biomedical Engineering</i>, 40(11), 2488&ndash;2500.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/23008097/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <!-- 2011 -->
-            <div class="year-group">
-                <div class="year-label">2011</div>
-                <div class="pub-list">
-                    <article class="card pub-card">
-                        <div class="pub-title">Computational modeling and analysis of insulin induced eukaryotic translation initiation</div>
-                        <div class="pub-authors">Lequieu J, Chakrabarti A, Nayak S and JD Varner (2011) <i>PLoS Computational Biology</i>, 7(11), e1002263.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/22102801/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">A review of the mammalian unfolded protein response</div>
-                        <div class="pub-authors">Chakrabarti A, Chen AW and JD Varner (2011) <i>Biotechnology and Bioengineering</i>, 108(12), 2777&ndash;2793.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/21809331/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Interferon regulatory factor-1 binds c-Cbl, enhances MAPK signaling and promotes retinoic acid-induced differentiation of HL-60 cells</div>
-                        <div class="pub-authors">Shen M, Bunaciu RP, Congleton J, Jensen HA, Sayam LG, JD Varner and Yen A (2011) <i>Leukemia &amp; Lymphoma</i>, 52(12), 2372&ndash;2379.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/21740303/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Modeling and analysis of retinoic acid induced differentiation of uncommitted precursor cells</div>
-                        <div class="pub-authors">Tasseff R, Nayak S, Song SO, Yen A and JD Varner (2011) <i>Integrative Biology</i>, 3(5), 578&ndash;591.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/21437295/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Modelling and analysis of an ensemble of eukaryotic translation initiation models</div>
-                        <div class="pub-authors">Nayak S, Siddiqui JK and JD Varner (2011) <i>IET Systems Biology</i>, 5(1), 2&ndash;14.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/21261397/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <!-- 2010 -->
-            <div class="year-group">
-                <div class="year-label">2010</div>
-                <div class="pub-list">
-                    <article class="card pub-card">
-                        <div class="pub-title">Ensembles of uncertain mathematical models can identify network response to therapeutic interventions</div>
-                        <div class="pub-authors">Luan D, Szlam F, Tanaka KA, Barie PS and JD Varner (2010) <i>Molecular BioSystems</i>, 6(11), 2272&ndash;2286.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/20844798/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">RAF associates with phosphorylated nuclear BubR1 during endoreduplication induced by JAK inhibition</div>
-                        <div class="pub-authors">Reiterer G, Chen L, Tasseff R, JD Varner, Chen CY and Yen A (2010) <i>Cell Cycle</i>, 9(16), 3297&ndash;3304.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/20703093/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Ensembles of signal transduction models using Pareto Optimal Ensemble Techniques (POETs)</div>
-                        <div class="pub-authors">Song SO, Chakrabarti A and JD Varner (2010) <i>Biotechnology Journal</i>, 5(7), 768&ndash;780.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/20665647/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Arsenic trioxide cooperates with all-trans retinoic acid to enhance MAPK activation and differentiation in PML-RARalpha negative human myeloblastic leukemia cells</div>
-                        <div class="pub-authors">Nayak S, Shen M, Bunaciu RP, Bloom SE, JD Varner and Yen A (2010) <i>Leukemia &amp; Lymphoma</i>, 51(9), 1734&ndash;1747.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/20615082/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Analysis of the molecular networks in androgen dependent and independent prostate cancer revealed fragile and robust subsystems</div>
-                        <div class="pub-authors">Tasseff R, Nayak S, Salim S, Kaushik P, Rizvi N and JD Varner (2010) <i>PLoS ONE</i>, 5(1), e8864.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/20126616/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Anti-factor IXa aptamer reduces propagation of thrombin generation in plasma anticoagulated with warfarin</div>
-                        <div class="pub-authors">Szlam F, Luan D, Bolliger D, Szlam AD, Levy JH, JD Varner and Tanaka KA (2010) <i>Thrombosis Research</i>, 125(5), e252&ndash;e258.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/20004955/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <!-- 2008 -->
-            <div class="year-group">
-                <div class="year-label">2008</div>
-                <div class="pub-list">
-                    <article class="card pub-card">
-                        <div class="pub-title">A hybrid model of anaerobic <i>E. coli</i> GJT001: combination of elementary flux modes and cybernetic variables</div>
-                        <div class="pub-authors">Kim JI, JD Varner and Ramkrishna D (2008) <i>Biotechnology Progress</i>, 24(5), 993&ndash;1006.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/19194908/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Engineering the spatial organization of metabolic enzymes: mimicking nature's synergy</div>
-                        <div class="pub-authors">Conrado RJ, JD Varner and DeLisa MP (2008) <i>Current Opinion in Biotechnology</i>, 19(5), 492&ndash;499.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/18725290/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">A test of highly optimized tolerance reveals fragile cell-cycle mechanisms are molecular targets in clinical cancer trials</div>
-                        <div class="pub-authors">Nayak S, Salim S, Luan D, Zai M and JD Varner (2008) <i>PLoS ONE</i>, 3(4), e2016.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/18431497/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <!-- 2007 -->
-            <div class="year-group">
-                <div class="year-label">2007</div>
-                <div class="pub-list">
-                    <article class="card pub-card">
-                        <div class="pub-title">Computationally derived points of fragility of a human cascade are consistent with current therapeutic strategies</div>
-                        <div class="pub-authors">Luan D, Zai M and JD Varner (2007) <i>PLoS Computational Biology</i>, 3(7), e142.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/17658944/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Stochastic reaction-diffusion simulation of enzyme compartmentalization reveals improved catalytic efficiency for a synthetic metabolic pathway</div>
-                        <div class="pub-authors">Conrado RJ, Mansell TJ, JD Varner and DeLisa MP (2007) <i>Metabolic Engineering</i>, 9(4), 355&ndash;363.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/17601761/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <!-- 2005 -->
-            <div class="year-group">
-                <div class="year-label">2005</div>
-                <div class="pub-list">
-                    <article class="card pub-card">
-                        <div class="pub-title">Systems biology and the mathematical modelling of antibody-directed enzyme prodrug therapy (ADEPT)</div>
-                        <div class="pub-authors">JD Varner (2005) <i>IEE Proceedings &ndash; Systems Biology</i>, 152(4), 291&ndash;302.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/16986273/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <!-- 2003 -->
-            <div class="year-group">
-                <div class="year-label">2003</div>
-                <div class="pub-list">
-                    <article class="card pub-card">
-                        <div class="pub-title">Cybernetic model predictive control of a continuous bioreactor with cell recycle</div>
-                        <div class="pub-authors">Gadkar KG, Doyle FJ III, Crowley TJ and JD Varner (2003) <i>Biotechnology Progress</i>, 19(5), 1487&ndash;1497.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/14524710/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <!-- 2000 -->
-            <div class="year-group">
-                <div class="year-label">2000</div>
-                <div class="pub-list">
-                    <article class="card pub-card">
-                        <div class="pub-title">A mathematical model of caspase function in apoptosis</div>
-                        <div class="pub-authors">Fussenegger M, Bailey JE and JD Varner (2000) <i>Nature Biotechnology</i>, 18(7), 768&ndash;774.</div>
-                        <div class="pub-links">
-                            <a href="https://doi.org/10.1038/77589">Paper &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="card pub-card">
-                        <div class="pub-title">Large-scale prediction of phenotype: concept</div>
-                        <div class="pub-authors">JD Varner (2000) <i>Biotechnology and Bioengineering</i>, 69(6), 664&ndash;678.</div>
-                        <div class="pub-links">
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/10918142/">Paper &rarr;</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-        </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-info">
-                VARNERLAB &middot; Cornell University &middot; Ithaca, NY 14850
-            </div>
-            <ul class="footer-links">
-                <li><a href="mailto:jdv27@cornell.edu">Contact</a></li>
-                <li><a href="https://github.com/varnerlab">GitHub</a></li>
-                <li><a href="https://scholar.google.com/citations?user=o1UDaMwAAAAJ&hl=en">Google Scholar</a></li>
-                <li><a href="https://www.linkedin.com/in/jeffrey-varner-15b0045/">LinkedIn</a></li>
-                <li><a href="https://www.engineering.cornell.edu/faculty-directory/jeffrey-d-varner">Cornell</a></li>
-            </ul>
-        </div>
-    </footer>
-
+</div>
 </body>
 </html>

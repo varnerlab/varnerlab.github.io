@@ -1,232 +1,255 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>Software | Varner Lab</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Software | Varner Lab</title>
+<meta name="description" content="Open-source tools, packages, and reproducible model code from the Varner Lab.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+::selection{background:#BC5A2E;color:#fff}
+</style>
+<style>
+.cch1{transition:color .2s ease,border-color .2s ease,background .2s ease}.cch1:hover{color:#1B1916 !important}
+.cch2{transition:color .2s ease,border-color .2s ease,background .2s ease}.cch2:hover{border-color:#C9A48F !important;background:#FCFBF8 !important}
+.cch3{transition:color .2s ease,border-color .2s ease,background .2s ease}.cch3:hover{color:#fff !important}
+</style>
 </head>
-<body>
+<body style="margin:0">
+<div style="background:#F4F2EC;color:#1B1916;font-family:'IBM Plex Sans',system-ui,sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;min-height:100vh">
 
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="navbar-brand">VARNERLAB</a>
-            <button class="navbar-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.navbar-links').classList.toggle('open')">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="navbar-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="software.html" class="active">Software</a></li>
-                <li><a href="teaching.html">Teaching</a></li>
-            </ul>
+  <!-- ===== NAV ===== -->
+  <nav style="position:sticky;top:0;z-index:50;background:rgba(244,242,236,0.86);backdrop-filter:blur(10px);border-bottom:1px solid #E2DDD2">
+    <div style="max-width:1180px;margin:0 auto;padding:0 32px;height:68px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+      <a href="index.html" style="display:flex;align-items:center;gap:11px">
+        <span style="width:10px;height:10px;background:#BC5A2E;display:inline-block"></span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:15px;letter-spacing:0.16em">VARNER LAB</span>
+      </a>
+      <div style="display:flex;align-items:center;gap:30px;font-size:14.5px;flex-wrap:wrap">
+        <a href="index.html" style="color:#5F5A51;padding:4px 0;border-bottom:2px solid transparent" class="cch1">Home</a>
+        <a href="publications.html" style="color:#5F5A51;padding:4px 0;border-bottom:2px solid transparent" class="cch1">Publications</a>
+        <a href="software.html" style="color:#BC5A2E;padding:4px 0;border-bottom:2px solid #BC5A2E">Software</a>
+        <a href="teaching.html" style="color:#5F5A51;padding:4px 0;border-bottom:2px solid transparent" class="cch1">Teaching</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <header style="max-width:1180px;margin:0 auto;padding:72px 32px 8px">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:0.2em;text-transform:uppercase;color:#BC5A2E">Software</div>
+    <h1 style="font-family:'IBM Plex Serif',Georgia,serif;font-weight:500;font-size:clamp(34px,4.6vw,52px);line-height:1.05;letter-spacing:-0.02em;margin:18px 0 0">Open-source tools &amp; models</h1>
+    <p style="font-size:17.5px;color:#5F5A51;max-width:62ch;margin:18px 0 0">Packages, frameworks, and reproducible model code developed by the lab — spanning financial simulation, parameter estimation, and computational biology. All freely available on <a href="https://github.com/varnerlab" style="color:#BC5A2E;border-bottom:1px solid #E3B79F">GitHub</a>.</p>
+  </header>
+
+  <main style="max-width:1180px;margin:0 auto;padding:40px 32px 88px">
+
+    <!-- Finance & ML -->
+    <div style="display:flex;align-items:baseline;gap:16px;margin:24px 0 22px">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#BC5A2E;letter-spacing:0.16em">01</span>
+      <h2 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:24px;font-weight:500;margin:0">Finance &amp; Machine Learning</h2>
+      <span style="flex:1;height:1px;background:#E2DDD2"></span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px">
+      <a href="https://arxiv.org/abs/2411.16585" style="display:flex;flex-direction:column;background:#FBFAF6;border:1px solid #E2DDD2;padding:24px" class="cch2">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:19px;font-weight:500;margin:0">MarketGPT</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#9558B2">JULIA</span></div>
+        <p style="font-size:14px;color:#5F5A51;line-height:1.55;margin:12px 0 18px;flex:1">A generative pre-trained transformer for modeling financial time series and replicating limit order book dynamics.</p>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E">arXiv &rarr;</span>
+      </a>
+      <a href="https://arxiv.org/abs/2312.14903" style="display:flex;flex-direction:column;background:#FBFAF6;border:1px solid #E2DDD2;padding:24px" class="cch2">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:19px;font-weight:500;margin:0">Scalable ABM Market Simulator</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#9558B2">JULIA</span></div>
+        <p style="font-size:14px;color:#5F5A51;line-height:1.55;margin:12px 0 18px;flex:1">Agent-based financial market simulation platform with multiple assets, distributed computing, and heterogeneous agents.</p>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E">arXiv &rarr;</span>
+      </a>
+      <a href="https://github.com/varnerlab/CHMM-Model-Repository" style="display:flex;flex-direction:column;background:#FBFAF6;border:1px solid #E2DDD2;padding:24px" class="cch2">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:19px;font-weight:500;margin:0">CHMM Model</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#9558B2">JULIA</span></div>
+        <p style="font-size:14px;color:#5F5A51;line-height:1.55;margin:12px 0 18px;flex:1">Continuous Hidden Markov Models as a digital twin for equity returns — Gaussian, Student-t, and Laplace emissions with cross-asset copula composition.</p>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E">GitHub &rarr;</span>
+      </a>
+      <a href="https://github.com/varnerlab/JumpHMM.jl" style="display:flex;flex-direction:column;background:#FBFAF6;border:1px solid #E2DDD2;padding:24px" class="cch2">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:19px;font-weight:500;margin:0">JumpHMM.jl</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#9558B2">JULIA</span></div>
+        <p style="font-size:14px;color:#5F5A51;line-height:1.55;margin:12px 0 18px;flex:1">A Julia package implementing a hybrid Hidden Markov Model with Poisson jump-diffusion for synthetic equity time-series generation.</p>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E">GitHub &rarr;</span>
+      </a>
+      <a href="https://github.com/varnerlab/heston_implied_volatility_model" style="display:flex;flex-direction:column;background:#FBFAF6;border:1px solid #E2DDD2;padding:24px" class="cch2">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:19px;font-weight:500;margin:0">Heston IV / Options</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#9558B2">JULIA</span></div>
+        <p style="font-size:14px;color:#5F5A51;line-height:1.55;margin:12px 0 18px;flex:1">Jump-HMM-driven Heston implied-volatility model for synthetic American option pricing.</p>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E">GitHub &rarr;</span>
+      </a>
+    </div>
+
+    <!-- Frameworks & Tools -->
+    <div style="display:flex;align-items:baseline;gap:16px;margin:52px 0 22px">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#BC5A2E;letter-spacing:0.16em">02</span>
+      <h2 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:24px;font-weight:500;margin:0">Modeling Frameworks &amp; Tools</h2>
+      <span style="flex:1;height:1px;background:#E2DDD2"></span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px">
+      <a href="https://github.com/varnerlab/BSTModelKit.jl.git" style="display:flex;flex-direction:column;background:#FBFAF6;border:1px solid #E2DDD2;padding:24px" class="cch2">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:19px;font-weight:500;margin:0">BSTModelKit.jl</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#9558B2">JULIA</span></div>
+        <p style="font-size:14px;color:#5F5A51;line-height:1.55;margin:12px 0 18px;flex:1">Constructing, solving, and analyzing biochemical network models using Biochemical Systems Theory (BST).</p>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E">GitHub &rarr;</span>
+      </a>
+      <a href="https://github.com/varnerlab/POETs.jl.git" style="display:flex;flex-direction:column;background:#FBFAF6;border:1px solid #E2DDD2;padding:24px" class="cch2">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:19px;font-weight:500;margin:0">POETs.jl</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#9558B2">JULIA</span></div>
+        <p style="font-size:14px;color:#5F5A51;line-height:1.55;margin:12px 0 18px;flex:1">JuPOETs: a constrained multiobjective optimization approach to estimate biochemical model ensembles via Pareto optimal ensemble techniques.</p>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E">GitHub &rarr;</span>
+      </a>
+      <a href="https://github.com/varnerlab/SEML" style="display:flex;flex-direction:column;background:#FBFAF6;border:1px solid #E2DDD2;padding:24px" class="cch2">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:19px;font-weight:500;margin:0">SEML</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#9558B2">JULIA</span></div>
+        <p style="font-size:14px;color:#5F5A51;line-height:1.55;margin:12px 0 18px;flex:1">Simplified English Modeling Language for constructing biological models in Julia using a human-readable syntax.</p>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E">GitHub &rarr;</span>
+      </a>
+      <a href="https://github.com/varnerlab/Publication_DOPS_MATLAB_code_repository" style="display:flex;flex-direction:column;background:#FBFAF6;border:1px solid #E2DDD2;padding:24px" class="cch2">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:19px;font-weight:500;margin:0">DOPS</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#C0612F">MATLAB</span></div>
+        <p style="font-size:14px;color:#5F5A51;line-height:1.55;margin:12px 0 18px;flex:1">Dynamic Optimization with Particle Swarms — a meta-heuristic for parameter estimation in biochemical models.</p>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E">GitHub &rarr;</span>
+      </a>
+    </div>
+
+    <!-- Biological System Models -->
+    <div style="display:flex;align-items:baseline;gap:16px;margin:52px 0 22px">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#BC5A2E;letter-spacing:0.16em">03</span>
+      <h2 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:24px;font-weight:500;margin:0">Biological System Models</h2>
+      <span style="flex:1;height:1px;background:#E2DDD2"></span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px">
+      <a href="https://github.com/varnerlab/Kinetic-CFPS-Model-Publication-Code" style="display:flex;flex-direction:column;background:#FBFAF6;border:1px solid #E2DDD2;padding:24px" class="cch2">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:19px;font-weight:500;margin:0">Kinetic CFPS Model</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#9558B2">JULIA</span></div>
+        <p style="font-size:14px;color:#5F5A51;line-height:1.55;margin:12px 0 18px;flex:1">Genome-scale, sequence-specific dynamic model of cell-free protein synthesis in <i>E. coli</i>.</p>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E">GitHub &rarr;</span>
+      </a>
+      <a href="https://github.com/varnerlab/Sequence-Specific-FBA-CFPS-Publication-Code" style="display:flex;flex-direction:column;background:#FBFAF6;border:1px solid #E2DDD2;padding:24px" class="cch2">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:19px;font-weight:500;margin:0">Sequence-Specific FBA CFPS</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#9558B2">JULIA</span></div>
+        <p style="font-size:14px;color:#5F5A51;line-height:1.55;margin:12px 0 18px;flex:1">Sequence-specific constraint-based modeling framework for cell-free protein synthesis systems.</p>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E">GitHub &rarr;</span>
+      </a>
+      <a href="https://github.com/varnerlab/HCM-FBA-Model-Code.git" style="display:flex;flex-direction:column;background:#FBFAF6;border:1px solid #E2DDD2;padding:24px" class="cch2">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:19px;font-weight:500;margin:0">HCM-FBA Model</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#9558B2">JULIA</span></div>
+        <p style="font-size:14px;color:#5F5A51;line-height:1.55;margin:12px 0 18px;flex:1">Hybrid cybernetic modeling with flux balance analysis for effective dynamic models of metabolic networks.</p>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E">GitHub &rarr;</span>
+      </a>
+      <a href="https://github.com/jeffreyvarner/HybridCoagulationModel_v1.git" style="display:flex;flex-direction:column;background:#FBFAF6;border:1px solid #E2DDD2;padding:24px" class="cch2">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:19px;font-weight:500;margin:0">Hybrid Coagulation Model</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#3776AB">PYTHON</span></div>
+        <p style="font-size:14px;color:#5F5A51;line-height:1.55;margin:12px 0 18px;flex:1">Dynamic modeling of the human coagulation cascade using reduced-order effective kinetic models.</p>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E">GitHub &rarr;</span>
+      </a>
+      <a href="https://github.com/varnerlab/Complement_model_repository.git" style="display:flex;flex-direction:column;background:#FBFAF6;border:1px solid #E2DDD2;padding:24px" class="cch2">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:19px;font-weight:500;margin:0">Complement Model</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#9558B2">JULIA</span></div>
+        <p style="font-size:14px;color:#5F5A51;line-height:1.55;margin:12px 0 18px;flex:1">Reduced-order modeling and analysis of the human complement system.</p>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E">GitHub &rarr;</span>
+      </a>
+      <a href="https://github.com/varnerlab/Glyco-model-code-MATLAB" style="display:flex;flex-direction:column;background:#FBFAF6;border:1px solid #E2DDD2;padding:24px" class="cch2">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:19px;font-weight:500;margin:0">Glyco Model</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#C0612F">MATLAB</span></div>
+        <p style="font-size:14px;color:#5F5A51;line-height:1.55;margin:12px 0 18px;flex:1">Model-guided metabolic engineering for improving designer glycan production in <i>E. coli</i>.</p>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E">GitHub &rarr;</span>
+      </a>
+      <a href="https://github.com/varnerlab/HL60-TF-Model_v4" style="display:flex;flex-direction:column;background:#FBFAF6;border:1px solid #E2DDD2;padding:24px" class="cch2">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:19px;font-weight:500;margin:0">HL60 TF Model</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#9558B2">JULIA</span></div>
+        <p style="font-size:14px;color:#5F5A51;line-height:1.55;margin:12px 0 18px;flex:1">Effective model of the retinoic-acid-induced HL-60 differentiation program signal transduction.</p>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E">GitHub &rarr;</span>
+      </a>
+      <a href="https://github.com/varnerlab/Prostate_model_code_repository" style="display:flex;flex-direction:column;background:#FBFAF6;border:1px solid #E2DDD2;padding:24px" class="cch2">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:19px;font-weight:500;margin:0">Prostate Model</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#1A7FA8">OCTAVE</span></div>
+        <p style="font-size:14px;color:#5F5A51;line-height:1.55;margin:12px 0 18px;flex:1">Modeling and analysis of hormone and mitogenic signal integration in prostate cancer.</p>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E">GitHub &rarr;</span>
+      </a>
+      <a href="https://github.com/varnerlab/Reduced_EMT_Model" style="display:flex;flex-direction:column;background:#FBFAF6;border:1px solid #E2DDD2;padding:24px" class="cch2">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:19px;font-weight:500;margin:0">Reduced EMT Model</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#9558B2">JULIA</span></div>
+        <p style="font-size:14px;color:#5F5A51;line-height:1.55;margin:12px 0 18px;flex:1">Population heterogeneity in the epithelial-to-mesenchymal transition controlled by NFAT and phosphorylated Sp1.</p>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E">GitHub &rarr;</span>
+      </a>
+      <a href="https://github.com/varnerlab/Fibrinolysis_model_w_platelets" style="display:flex;flex-direction:column;background:#FBFAF6;border:1px solid #E2DDD2;padding:24px" class="cch2">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:19px;font-weight:500;margin:0">Fibrinolysis Model</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#9558B2">JULIA</span></div>
+        <p style="font-size:14px;color:#5F5A51;line-height:1.55;margin:12px 0 18px;flex:1">Kinetic modeling of coagulation and fibrinolysis with platelets.</p>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E">GitHub &rarr;</span>
+      </a>
+    </div>
+
+    <!-- Generative Modeling & Protein Design -->
+    <div style="display:flex;align-items:baseline;gap:16px;margin:52px 0 22px">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#BC5A2E;letter-spacing:0.16em">04</span>
+      <h2 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:24px;font-weight:500;margin:0">Generative Modeling &amp; Protein Design</h2>
+      <span style="flex:1;height:1px;background:#E2DDD2"></span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px">
+      <a href="https://github.com/varnerlab/SA-Protein-Modeling-Study" style="display:flex;flex-direction:column;background:#FBFAF6;border:1px solid #E2DDD2;padding:24px" class="cch2">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:19px;font-weight:500;margin:0">SA Protein Design</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#9558B2">JULIA</span></div>
+        <p style="font-size:14px;color:#5F5A51;line-height:1.55;margin:12px 0 18px;flex:1">Training-free generation of protein sequences from small family alignments via stochastic attention.</p>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E">GitHub &rarr;</span>
+      </a>
+      <a href="https://github.com/varnerlab/SA-Binding-Generation-Study" style="display:flex;flex-direction:column;background:#FBFAF6;border:1px solid #E2DDD2;padding:24px" class="cch2">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:19px;font-weight:500;margin:0">SA Binding Generation</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#9558B2">JULIA</span></div>
+        <p style="font-size:14px;color:#5F5A51;line-height:1.55;margin:12px 0 18px;flex:1">Conditioning protein binder generation via Hopfield pattern multiplicity and stochastic attention.</p>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E">GitHub &rarr;</span>
+      </a>
+      <a href="https://github.com/varnerlab/SA-generation-legacy-dataset-paper" style="display:flex;flex-direction:column;background:#FBFAF6;border:1px solid #E2DDD2;padding:24px" class="cch2">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:19px;font-weight:500;margin:0">Synthetic Patient Generation</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#9558B2">JULIA</span></div>
+        <p style="font-size:14px;color:#5F5A51;line-height:1.55;margin:12px 0 18px;flex:1">Validated synthetic patient generation for small longitudinal cohorts — coagulation dynamics across pregnancy.</p>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E">GitHub &rarr;</span>
+      </a>
+    </div>
+
+    <!-- Course Repositories -->
+    <div style="display:flex;align-items:baseline;gap:16px;margin:52px 0 22px">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#BC5A2E;letter-spacing:0.16em">05</span>
+      <h2 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:24px;font-weight:500;margin:0">Course Repositories</h2>
+      <span style="flex:1;height:1px;background:#E2DDD2"></span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px">
+      <a href="https://github.com/varnerlab/CHEME-5660-CourseRepository-Fall-2025.git" style="display:flex;flex-direction:column;background:#FBFAF6;border:1px solid #E2DDD2;padding:24px" class="cch2">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:19px;font-weight:500;margin:0">CHEME 5660</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#9558B2">JULIA</span></div>
+        <p style="font-size:14px;color:#5F5A51;line-height:1.55;margin:12px 0 18px;flex:1">Financial Data, Markets, and Mayhem — quantitative finance for scientists and engineers.</p>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E">GitHub &rarr;</span>
+      </a>
+      <a href="https://github.com/varnerlab/CHEME-5800-Lectures-Fall-2025.git" style="display:flex;flex-direction:column;background:#FBFAF6;border:1px solid #E2DDD2;padding:24px" class="cch2">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:19px;font-weight:500;margin:0">CHEME 5800</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#9558B2">JULIA</span></div>
+        <p style="font-size:14px;color:#5F5A51;line-height:1.55;margin:12px 0 18px;flex:1">Principles of Computational Thinking for Engineers — data science, ML, and mathematical modeling.</p>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E">GitHub &rarr;</span>
+      </a>
+      <a href="https://github.com/varnerlab/CHEME-5820-Lectures-Spring-2026.git" style="display:flex;flex-direction:column;background:#FBFAF6;border:1px solid #E2DDD2;padding:24px" class="cch2">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px"><h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:19px;font-weight:500;margin:0">CHEME 5820</h3><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#9558B2">JULIA</span></div>
+        <p style="font-size:14px;color:#5F5A51;line-height:1.55;margin:12px 0 18px;flex:1">Machine Learning and AI Methods for Engineers — supervised, deep, and reinforcement learning.</p>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E">GitHub &rarr;</span>
+      </a>
+    </div>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer style="border-top:1px solid #E2DDD2;background:#1B1916;color:#D9D3C7">
+    <div style="max-width:1180px;margin:0 auto;padding:56px 32px 28px;display:flex;flex-wrap:wrap;gap:48px;justify-content:space-between">
+      <div style="flex:1 1 320px;max-width:420px">
+        <div style="display:flex;align-items:center;gap:11px">
+          <span style="width:10px;height:10px;background:#BC5A2E;display:inline-block"></span>
+          <span style="font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:15px;letter-spacing:0.16em;color:#F4F2EC">VARNER LAB</span>
         </div>
-    </nav>
+        <p style="font-size:14.5px;line-height:1.6;color:#9A9488;margin:18px 0 0">Robert Frederick Smith School of Chemical &amp; Biomolecular Engineering, Cornell University · Ithaca, NY 14850</p>
+        <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#BC5A2E;margin:16px 0 0;letter-spacing:0.04em">Committed to Open Science</p>
+      </div>
+      <div style="flex:0 1 auto">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.14em;text-transform:uppercase;color:#6E685D">Connect</div>
+        <ul style="list-style:none;padding:0;margin:18px 0 0;display:flex;flex-direction:column;gap:11px;font-size:14.5px">
+          <li><a href="mailto:jdv27@cornell.edu" style="color:#D9D3C7" class="cch3">Email</a></li>
+          <li><a href="https://github.com/varnerlab" style="color:#D9D3C7" class="cch3">GitHub</a></li>
+          <li><a href="https://scholar.google.com/citations?user=o1UDaMwAAAAJ&hl=en" style="color:#D9D3C7" class="cch3">Google Scholar</a></li>
+          <li><a href="https://www.linkedin.com/in/jeffrey-varner-15b0045/" style="color:#D9D3C7" class="cch3">LinkedIn</a></li>
+          <li><a href="https://www.engineering.cornell.edu/faculty-directory/jeffrey-d-varner" style="color:#D9D3C7" class="cch3">Cornell Profile</a></li>
+        </ul>
+      </div>
+    </div>
+    <div style="max-width:1180px;margin:0 auto;padding:18px 32px;border-top:1px solid #322E28;font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#6E685D;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px">
+      <span>© 2026 Varner Lab</span>
+      <span>varnerlab.org</span>
+    </div>
+  </footer>
 
-    <section class="page-header">
-        <div class="container">
-            <h1>Software</h1>
-            <p>Open-source tools, models, and packages developed by the lab.</p>
-        </div>
-    </section>
-
-    <main>
-        <div class="container">
-            <div class="software-grid">
-
-                <div class="card software-card">
-                    <h3>BSTModelKit.jl</h3>
-                    <p>A Julia package for constructing, solving, and analyzing biochemical network models using Biochemical Systems Theory (BST).</p>
-                    <div class="meta">
-                        <span class="badge badge-julia">Julia</span>
-                        <a href="https://github.com/varnerlab/BSTModelKit.jl.git">GitHub &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="card software-card">
-                    <h3>MarketGPT</h3>
-                    <p>A generative pre-trained transformer for modeling financial time series and replicating limit order book dynamics.</p>
-                    <div class="meta">
-                        <span class="badge badge-julia">Julia</span>
-                        <a href="https://arxiv.org/abs/2411.16585">arXiv &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="card software-card">
-                    <h3>Scalable ABM Market Simulator</h3>
-                    <p>Agent-based financial market simulation platform with multiple assets, distributed computing, and heterogeneous agents.</p>
-                    <div class="meta">
-                        <span class="badge badge-julia">Julia</span>
-                        <a href="https://arxiv.org/abs/2312.14903">arXiv &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="card software-card">
-                    <h3>CHEME-5660 Course Repository</h3>
-                    <p>Course materials for Financial Data, Markets, and Mayhem: quantitative finance for scientists and engineers.</p>
-                    <div class="meta">
-                        <span class="badge badge-julia">Julia</span>
-                        <a href="https://github.com/varnerlab/CHEME-5660-CourseRepository-Fall-2025.git">GitHub &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="card software-card">
-                    <h3>CHEME-5800 Course Repository</h3>
-                    <p>Course materials for Principles of Computational Thinking for Engineers: data science, ML, and mathematical modeling.</p>
-                    <div class="meta">
-                        <span class="badge badge-julia">Julia</span>
-                        <a href="https://github.com/varnerlab/CHEME-5800-Lectures-Fall-2025.git">GitHub &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="card software-card">
-                    <h3>CHEME-5820 Course Repository</h3>
-                    <p>Course materials for Machine Learning and AI Methods for Engineers: supervised learning, deep learning, and reinforcement learning.</p>
-                    <div class="meta">
-                        <span class="badge badge-julia">Julia</span>
-                        <a href="https://github.com/varnerlab/CHEME-5820-Lectures-Spring-2026.git">GitHub &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="card software-card">
-                    <h3>POETs.jl</h3>
-                    <p>JuPOETs: A constrained multiobjective optimization approach to estimate biochemical model ensembles using Pareto optimal ensemble techniques.</p>
-                    <div class="meta">
-                        <span class="badge badge-julia">Julia</span>
-                        <a href="https://github.com/varnerlab/POETs.jl.git">GitHub &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="card software-card">
-                    <h3>SEML</h3>
-                    <p>Simplified English Modeling Language for constructing biological models in Julia using a human-readable syntax.</p>
-                    <div class="meta">
-                        <span class="badge badge-julia">Julia</span>
-                        <a href="https://github.com/varnerlab/SEML">GitHub &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="card software-card">
-                    <h3>DOPS</h3>
-                    <p>Dynamic Optimization with Particle Swarms: A meta-heuristic for parameter estimation in biochemical models.</p>
-                    <div class="meta">
-                        <span class="badge badge-matlab">MATLAB</span>
-                        <a href="https://github.com/varnerlab/Publication_DOPS_MATLAB_code_repository">GitHub &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="card software-card">
-                    <h3>Kinetic CFPS Model</h3>
-                    <p>Genome scale sequence specific dynamic model of cell-free protein synthesis in <i>E. coli</i>.</p>
-                    <div class="meta">
-                        <span class="badge badge-julia">Julia</span>
-                        <a href="https://github.com/varnerlab/Kinetic-CFPS-Model-Publication-Code">GitHub &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="card software-card">
-                    <h3>Sequence-Specific FBA CFPS</h3>
-                    <p>Sequence specific constraint-based modeling framework for cell-free protein synthesis systems.</p>
-                    <div class="meta">
-                        <span class="badge badge-julia">Julia</span>
-                        <a href="https://github.com/varnerlab/Sequence-Specific-FBA-CFPS-Publication-Code">GitHub &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="card software-card">
-                    <h3>HCM-FBA Model</h3>
-                    <p>Hybrid cybernetic modeling with flux balance analysis for effective dynamic models of metabolic networks.</p>
-                    <div class="meta">
-                        <span class="badge badge-julia">Julia</span>
-                        <a href="https://github.com/varnerlab/HCM-FBA-Model-Code.git">GitHub &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="card software-card">
-                    <h3>Hybrid Coagulation Model</h3>
-                    <p>Dynamic modeling of the human coagulation cascade using reduced order effective kinetic models.</p>
-                    <div class="meta">
-                        <span class="badge badge-python">Python</span>
-                        <a href="https://github.com/jeffreyvarner/HybridCoagulationModel_v1.git">GitHub &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="card software-card">
-                    <h3>Complement Model</h3>
-                    <p>Reduced order modeling and analysis of the human complement system.</p>
-                    <div class="meta">
-                        <span class="badge badge-julia">Julia</span>
-                        <a href="https://github.com/varnerlab/Complement_model_repository.git">GitHub &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="card software-card">
-                    <h3>Glyco Model</h3>
-                    <p>Model-guided metabolic engineering for improving designer glycan production in <i>E. coli</i>.</p>
-                    <div class="meta">
-                        <span class="badge badge-matlab">MATLAB</span>
-                        <a href="https://github.com/varnerlab/Glyco-model-code-MATLAB">GitHub &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="card software-card">
-                    <h3>HL60 TF Model</h3>
-                    <p>Effective model of the retinoic acid induced HL-60 differentiation program signal transduction.</p>
-                    <div class="meta">
-                        <span class="badge badge-julia">Julia</span>
-                        <a href="https://github.com/varnerlab/HL60-TF-Model_v4">GitHub &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="card software-card">
-                    <h3>Prostate Model</h3>
-                    <p>Modeling and analysis of hormone and mitogenic signal integration in prostate cancer.</p>
-                    <div class="meta">
-                        <span class="badge badge-octave">Octave</span>
-                        <a href="https://github.com/varnerlab/Prostate_model_code_repository">GitHub &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="card software-card">
-                    <h3>Reduced EMT Model</h3>
-                    <p>Population heterogeneity in the epithelial to mesenchymal transition controlled by NFAT and phosphorylated Sp1.</p>
-                    <div class="meta">
-                        <span class="badge badge-julia">Julia</span>
-                        <a href="https://github.com/varnerlab/Reduced_EMT_Model">GitHub &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="card software-card">
-                    <h3>Fibrinolysis Model</h3>
-                    <p>Kinetic modeling of coagulation and fibrinolysis with platelets.</p>
-                    <div class="meta">
-                        <span class="badge badge-julia">Julia</span>
-                        <a href="https://github.com/varnerlab/Fibrinolysis_model_w_platelets">GitHub &rarr;</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-info">
-                VARNERLAB &middot; Cornell University &middot; Ithaca, NY 14850
-            </div>
-            <ul class="footer-links">
-                <li><a href="mailto:jdv27@cornell.edu">Contact</a></li>
-                <li><a href="https://github.com/varnerlab">GitHub</a></li>
-                <li><a href="https://scholar.google.com/citations?user=o1UDaMwAAAAJ&hl=en">Google Scholar</a></li>
-                <li><a href="https://www.linkedin.com/in/jeffrey-varner-15b0045/">LinkedIn</a></li>
-                <li><a href="https://www.engineering.cornell.edu/faculty-directory/jeffrey-d-varner">Cornell</a></li>
-            </ul>
-        </div>
-    </footer>
-
+</div>
 </body>
 </html>

@@ -1,138 +1,151 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>Teaching | Varner Lab</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teaching | Varner Lab</title>
+<meta name="description" content="Courses and programs in computational thinking, machine learning, and quantitative finance.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+::selection{background:#BC5A2E;color:#fff}
+</style>
+<style>
+.cch1{transition:color .2s ease,border-color .2s ease,background .2s ease}.cch1:hover{color:#1B1916 !important}
+.cch2{transition:color .2s ease,border-color .2s ease,background .2s ease}.cch2:hover{color:#9A4520 !important}
+.cch3{transition:color .2s ease,border-color .2s ease,background .2s ease}.cch3:hover{border-color:#C9A48F !important;background:#FCFBF8 !important}
+.cch4{transition:color .2s ease,border-color .2s ease,background .2s ease}.cch4:hover{color:#fff !important}
+</style>
 </head>
-<body>
+<body style="margin:0">
+<div style="background:#F4F2EC;color:#1B1916;font-family:'IBM Plex Sans',system-ui,sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;min-height:100vh">
 
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="navbar-brand">VARNERLAB</a>
-            <button class="navbar-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.navbar-links').classList.toggle('open')">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="navbar-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="software.html">Software</a></li>
-                <li><a href="teaching.html" class="active">Teaching</a></li>
-            </ul>
+  <!-- ===== NAV ===== -->
+  <nav style="position:sticky;top:0;z-index:50;background:rgba(244,242,236,0.86);backdrop-filter:blur(10px);border-bottom:1px solid #E2DDD2">
+    <div style="max-width:1180px;margin:0 auto;padding:0 32px;height:68px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+      <a href="index.html" style="display:flex;align-items:center;gap:11px">
+        <span style="width:10px;height:10px;background:#BC5A2E;display:inline-block"></span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:15px;letter-spacing:0.16em">VARNER LAB</span>
+      </a>
+      <div style="display:flex;align-items:center;gap:30px;font-size:14.5px;flex-wrap:wrap">
+        <a href="index.html" style="color:#5F5A51;padding:4px 0;border-bottom:2px solid transparent" class="cch1">Home</a>
+        <a href="publications.html" style="color:#5F5A51;padding:4px 0;border-bottom:2px solid transparent" class="cch1">Publications</a>
+        <a href="software.html" style="color:#5F5A51;padding:4px 0;border-bottom:2px solid transparent" class="cch1">Software</a>
+        <a href="teaching.html" style="color:#BC5A2E;padding:4px 0;border-bottom:2px solid #BC5A2E">Teaching</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <header style="max-width:1180px;margin:0 auto;padding:72px 32px 8px">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:0.2em;text-transform:uppercase;color:#BC5A2E">Teaching</div>
+    <h1 style="font-family:'IBM Plex Serif',Georgia,serif;font-weight:500;font-size:clamp(34px,4.6vw,52px);line-height:1.05;letter-spacing:-0.02em;margin:18px 0 0">Courses &amp; programs</h1>
+    <p style="font-size:17.5px;color:#5F5A51;max-width:62ch;margin:18px 0 0">Computational thinking, machine learning, and quantitative finance for scientists and engineers — taught at Cornell and through eCornell professional certificates.</p>
+  </header>
+
+  <main style="max-width:1180px;margin:0 auto;padding:48px 32px 88px">
+
+    <!-- University Courses -->
+    <div style="display:flex;align-items:baseline;gap:16px;margin:0 0 8px">
+      <h2 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:24px;font-weight:500;margin:0">Cornell Courses</h2>
+      <span style="flex:1;height:1px;background:#E2DDD2"></span>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:0">
+
+      <article style="display:flex;flex-wrap:wrap;gap:12px 40px;padding:30px 0;border-bottom:1px solid #E2DDD2">
+        <div style="flex:0 0 132px"><div style="font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:500;color:#BC5A2E">CHEME 4/5660</div><div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#9A948A;margin-top:8px;line-height:1.7">Fall<br>3 credits<br>In person &amp; distance</div></div>
+        <div style="flex:1 1 440px">
+          <h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:22px;font-weight:500;line-height:1.25;margin:0">Financial Data, Markets, and Mayhem for Scientists and Engineers</h3>
+          <p style="font-size:15px;color:#5F5A51;line-height:1.65;margin:12px 0 0;max-width:62ch">Teaches scientists and engineers to make quantitative financial decisions in corporate and wealth-management contexts, applying engineering, statistics, AI, and machine learning. Topics include quantitative asset-pricing models, risk management, and portfolio optimization using real-time and static data.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:16px">
+            <a href="https://classes.cornell.edu/browse/roster/FA25/class/CHEME/5660" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch2">Course Roster &rarr;</a>
+            <a href="https://github.com/varnerlab/CHEME-5660-CourseRepository-Fall-2025.git" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#7A746A" class="cch1">Repository &rarr;</a>
+          </div>
         </div>
-    </nav>
+      </article>
 
-    <section class="page-header">
-        <div class="container">
-            <h1>Teaching</h1>
-            <p>Courses in computational thinking, machine learning, and quantitative finance for scientists and engineers.</p>
+      <article style="display:flex;flex-wrap:wrap;gap:12px 40px;padding:30px 0;border-bottom:1px solid #E2DDD2">
+        <div style="flex:0 0 132px"><div style="font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:500;color:#BC5A2E">CHEME 4/5800</div><div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#9A948A;margin-top:8px;line-height:1.7">Fall<br>4 credits<br>In person</div></div>
+        <div style="flex:1 1 440px">
+          <h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:22px;font-weight:500;line-height:1.25;margin:0">Principles of Computational Thinking for Engineers</h3>
+          <p style="font-size:15px;color:#5F5A51;line-height:1.65;margin:12px 0 0;max-width:62ch">Integrates data science, statistics, linear algebra, artificial intelligence, and mathematical modeling using the Julia programming language. Students master software-engineering paradigms, data structures, and algorithms, with weekly labs applying machine learning to real-world industrial data.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:16px">
+            <a href="https://classes.cornell.edu/browse/roster/FA25/class/CHEME/5800" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch2">Course Roster &rarr;</a>
+            <a href="https://github.com/varnerlab/CHEME-5800-Lectures-Fall-2025.git" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#7A746A" class="cch1">Repository &rarr;</a>
+          </div>
         </div>
-    </section>
+      </article>
 
-    <main>
-        <div class="container">
-            <div class="course-list">
-
-                <div class="card course-card">
-                    <h3>CHEME 4/5660: Financial Data, Markets, and Mayhem for Scientists and Engineers</h3>
-                    <div class="semester">Fall &middot; 3 Credits &middot; In Person &amp; Distance Learning</div>
-                    <p>
-                        A quantitative finance course that teaches scientists and engineers to make quantitative financial decisions
-                        in corporate and wealth management contexts. The course employs methods from engineering, statistics, AI,
-                        data science, and machine learning to examine and enhance financial systems and decision-making. Topics include
-                        quantitative asset pricing models, risk management, and portfolio optimization using real-time and static data.
-                    </p>
-                    <div class="pub-links" style="margin-top: 12px;">
-                        <a href="https://classes.cornell.edu/browse/roster/FA25/class/CHEME/5660">Course Roster &rarr;</a>
-                        <a href="https://github.com/varnerlab/CHEME-5660-CourseRepository-Fall-2025.git">Course Repository &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="card course-card">
-                    <h3>CHEME 4/5800: Principles of Computational Thinking for Engineers</h3>
-                    <div class="semester">Fall &middot; 4 Credits &middot; In Person</div>
-                    <p>
-                        Engineering practice increasingly relies on computational tools and data analysis. This course integrates
-                        data science, statistics, linear algebra, artificial intelligence, and mathematical modeling using the Julia
-                        programming language. Students master software engineering paradigms, data structures, algorithms, and apply
-                        machine learning tools to analyze scientific and engineering datasets with weekly labs using real-world industrial data.
-                    </p>
-                    <div class="pub-links" style="margin-top: 12px;">
-                        <a href="https://classes.cornell.edu/browse/roster/FA25/class/CHEME/5800">Course Roster &rarr;</a>
-                        <a href="https://github.com/varnerlab/CHEME-5800-Lectures-Fall-2025.git">Course Repository &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="card course-card">
-                    <h3>CHEME 5/5820: Machine Learning and Artificial Intelligence Methods for Engineers</h3>
-                    <div class="semester">Spring &middot; 4 Credits &middot; In Person</div>
-                    <p>
-                        An introduction to machine learning with emphasis on supervised learning in engineering contexts. Topics include
-                        regularized linear models, boosting, kernel methods, deep learning approaches, generative modeling tools,
-                        decision-making in stochastic systems, and reinforcement learning. Students implement methods with real datasets
-                        and develop understanding of applicability and limitations.
-                    </p>
-                    <div class="pub-links" style="margin-top: 12px;">
-                        <a href="https://classes.cornell.edu/browse/roster/SP26/class/CHEME/5820">Course Roster &rarr;</a>
-                        <a href="https://github.com/varnerlab/CHEME-5820-Lectures-Spring-2026.git">Course Repository &rarr;</a>
-                    </div>
-                </div>
-
-            </div>
-
-            <h2 class="section-title" style="margin-top: 48px;">Professional Education</h2>
-            <div class="course-list">
-                <div class="card course-card">
-                    <h3>eCornell Certificate in Quantitative Finance</h3>
-                    <div class="semester">Online &middot; ~3 Months &middot; 6 Courses</div>
-                    <p>
-                        An online certificate program teaching computational finance using the Julia programming language.
-                        Students learn to analyze financial instruments, model risk, optimize portfolios, and build automated
-                        trading systems through hands-on practical learning. The six-course sequence covers fixed income securities
-                        and Treasury bond pricing, equity asset pricing using stochastic models, options pricing and derivatives,
-                        portfolio optimization and allocation strategies, and machine learning applications in financial decision-making.
-                    </p>
-                    <div class="pub-links" style="margin-top: 12px;">
-                        <a href="https://ecornell.cornell.edu/certificates/engineering/quantitative-finance/">eCornell Program &rarr;</a>
-                    </div>
-                </div>
-                <div class="card course-card">
-                    <h3>eCornell Certificate in AI in Finance</h3>
-                    <div class="semester">Live Online &middot; ~10 Weeks &middot; 5 Modules</div>
-                    <p>
-                        A professional certificate preparing financial professionals to apply AI technologies in their field.
-                        The program progresses from AI fundamentals and tools through real-world applications in investment research,
-                        credit risk, fraud detection, and client engagement, to responsible AI principles and strategic leadership
-                        for organizational adoption. Features Cornell faculty alongside industry practitioners from leading financial firms.
-                    </p>
-                    <div class="pub-links" style="margin-top: 12px;">
-                        <a href="https://ecornell.cornell.edu/certificates/ai/ai-in-finance/">eCornell Program &rarr;</a>
-                    </div>
-                </div>
-            </div>
-
+      <article style="display:flex;flex-wrap:wrap;gap:12px 40px;padding:30px 0;border-bottom:1px solid #E2DDD2">
+        <div style="flex:0 0 132px"><div style="font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:500;color:#BC5A2E">CHEME 4/5820</div><div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#9A948A;margin-top:8px;line-height:1.7">Spring<br>4 credits<br>In person</div></div>
+        <div style="flex:1 1 440px">
+          <h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:22px;font-weight:500;line-height:1.25;margin:0">Machine Learning and Artificial Intelligence Methods for Engineers</h3>
+          <p style="font-size:15px;color:#5F5A51;line-height:1.65;margin:12px 0 0;max-width:62ch">An introduction to machine learning emphasizing supervised learning in engineering contexts: regularized linear models, boosting, kernel methods, deep learning, generative modeling, decision-making in stochastic systems, and reinforcement learning — implemented on real datasets.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:16px">
+            <a href="https://classes.cornell.edu/browse/roster/SP26/class/CHEME/5820" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E" class="cch2">Course Roster &rarr;</a>
+            <a href="https://github.com/varnerlab/CHEME-5820-Lectures-Spring-2026.git" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#7A746A" class="cch1">Repository &rarr;</a>
+          </div>
         </div>
-    </main>
+      </article>
 
-    <footer>
-        <div class="container">
-            <div class="footer-info">
-                VARNERLAB &middot; Cornell University &middot; Ithaca, NY 14850
-            </div>
-            <ul class="footer-links">
-                <li><a href="mailto:jdv27@cornell.edu">Contact</a></li>
-                <li><a href="https://github.com/varnerlab">GitHub</a></li>
-                <li><a href="https://scholar.google.com/citations?user=o1UDaMwAAAAJ&hl=en">Google Scholar</a></li>
-                <li><a href="https://www.linkedin.com/in/jeffrey-varner-15b0045/">LinkedIn</a></li>
-                <li><a href="https://www.engineering.cornell.edu/faculty-directory/jeffrey-d-varner">Cornell</a></li>
-            </ul>
+    </div>
+
+    <!-- Professional Education -->
+    <div style="display:flex;align-items:baseline;gap:16px;margin:56px 0 22px">
+      <h2 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:24px;font-weight:500;margin:0">Professional Education</h2>
+      <span style="flex:1;height:1px;background:#E2DDD2"></span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px">
+      <a href="https://ecornell.cornell.edu/certificates/engineering/quantitative-finance/" style="display:block;background:#FBFAF6;border:1px solid #E2DDD2;padding:30px" class="cch3">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#9A948A">eCornell · Online · ~3 months · 6 courses</div>
+        <h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:21px;font-weight:500;line-height:1.25;margin:14px 0 0">Certificate in Quantitative Finance</h3>
+        <p style="font-size:14.5px;color:#5F5A51;line-height:1.6;margin:12px 0 18px">Computational finance with Julia — analyzing financial instruments, modeling risk, optimizing portfolios, and building automated trading systems across fixed income, equities, options, and ML applications.</p>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E">eCornell Program &rarr;</span>
+      </a>
+      <a href="https://ecornell.cornell.edu/certificates/ai/ai-in-finance/" style="display:block;background:#FBFAF6;border:1px solid #E2DDD2;padding:30px" class="cch3">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#9A948A">eCornell · Live online · ~10 weeks · 5 modules</div>
+        <h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:21px;font-weight:500;line-height:1.25;margin:14px 0 0">Certificate in AI in Finance</h3>
+        <p style="font-size:14.5px;color:#5F5A51;line-height:1.6;margin:12px 0 18px">Prepares financial professionals to apply AI — from fundamentals through investment research, credit risk, fraud detection, and client engagement, to responsible AI and organizational adoption, with Cornell faculty and industry practitioners.</p>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#BC5A2E">eCornell Program &rarr;</span>
+      </a>
+    </div>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer style="border-top:1px solid #E2DDD2;background:#1B1916;color:#D9D3C7">
+    <div style="max-width:1180px;margin:0 auto;padding:56px 32px 28px;display:flex;flex-wrap:wrap;gap:48px;justify-content:space-between">
+      <div style="flex:1 1 320px;max-width:420px">
+        <div style="display:flex;align-items:center;gap:11px">
+          <span style="width:10px;height:10px;background:#BC5A2E;display:inline-block"></span>
+          <span style="font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:15px;letter-spacing:0.16em;color:#F4F2EC">VARNER LAB</span>
         </div>
-    </footer>
+        <p style="font-size:14.5px;line-height:1.6;color:#9A9488;margin:18px 0 0">Robert Frederick Smith School of Chemical &amp; Biomolecular Engineering, Cornell University · Ithaca, NY 14850</p>
+        <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#BC5A2E;margin:16px 0 0;letter-spacing:0.04em">Committed to Open Science</p>
+      </div>
+      <div style="flex:0 1 auto">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.14em;text-transform:uppercase;color:#6E685D">Connect</div>
+        <ul style="list-style:none;padding:0;margin:18px 0 0;display:flex;flex-direction:column;gap:11px;font-size:14.5px">
+          <li><a href="mailto:jdv27@cornell.edu" style="color:#D9D3C7" class="cch4">Email</a></li>
+          <li><a href="https://github.com/varnerlab" style="color:#D9D3C7" class="cch4">GitHub</a></li>
+          <li><a href="https://scholar.google.com/citations?user=o1UDaMwAAAAJ&hl=en" style="color:#D9D3C7" class="cch4">Google Scholar</a></li>
+          <li><a href="https://www.linkedin.com/in/jeffrey-varner-15b0045/" style="color:#D9D3C7" class="cch4">LinkedIn</a></li>
+          <li><a href="https://www.engineering.cornell.edu/faculty-directory/jeffrey-d-varner" style="color:#D9D3C7" class="cch4">Cornell Profile</a></li>
+        </ul>
+      </div>
+    </div>
+    <div style="max-width:1180px;margin:0 auto;padding:18px 32px;border-top:1px solid #322E28;font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#6E685D;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px">
+      <span>© 2026 Varner Lab</span>
+      <span>varnerlab.org</span>
+    </div>
+  </footer>
 
+</div>
 </body>
 </html>

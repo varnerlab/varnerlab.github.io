@@ -1,97 +1,253 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>Varner Lab | Cornell University</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Varner Lab at Cornell University - Mathematical modeling, machine learning, quantitative finance, and computational engineering.">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Varner Lab | Cornell University</title>
+<meta name="description" content="Varner Lab at Cornell University — mathematical modeling, machine learning, quantitative finance, and computational biology.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+::selection{background:#BC5A2E;color:#fff}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+</style>
+<style>
+.cch1{transition:color .2s ease,border-color .2s ease,background .2s ease}.cch1:hover{color:#1B1916 !important}
+.cch2{transition:color .2s ease,border-color .2s ease,background .2s ease}.cch2:hover{background:#9A4520 !important}
+.cch3{transition:color .2s ease,border-color .2s ease,background .2s ease}.cch3:hover{border-color:#BC5A2E !important;color:#BC5A2E !important}
+.cch4{transition:color .2s ease,border-color .2s ease,background .2s ease}.cch4:hover{background:#FBFAF6 !important}
+.cch5{transition:color .2s ease,border-color .2s ease,background .2s ease}.cch5:hover{background:#F4F2EC !important}
+.cch6{transition:color .2s ease,border-color .2s ease,background .2s ease}.cch6:hover{color:#fff !important}
+</style>
 </head>
-<body>
+<body style="margin:0">
+<div style="background:#F4F2EC;color:#1B1916;font-family:'IBM Plex Sans',system-ui,sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;min-height:100vh">
 
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="navbar-brand">VARNERLAB</a>
-            <button class="navbar-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.navbar-links').classList.toggle('open')">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="navbar-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="software.html">Software</a></li>
-                <li><a href="teaching.html">Teaching</a></li>
-            </ul>
+  <!-- ===== NAV ===== -->
+  <nav style="position:sticky;top:0;z-index:50;background:rgba(244,242,236,0.86);backdrop-filter:blur(10px);border-bottom:1px solid #E2DDD2">
+    <div style="max-width:1180px;margin:0 auto;padding:0 32px;height:68px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+      <a href="index.html" style="display:flex;align-items:center;gap:11px">
+        <span style="width:10px;height:10px;background:#BC5A2E;display:inline-block"></span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:15px;letter-spacing:0.16em">VARNER LAB</span>
+      </a>
+      <div style="display:flex;align-items:center;gap:30px;font-size:14.5px;flex-wrap:wrap">
+        <a href="index.html" style="color:#BC5A2E;padding:4px 0;border-bottom:2px solid #BC5A2E">Home</a>
+        <a href="publications.html" style="color:#5F5A51;padding:4px 0;border-bottom:2px solid transparent" class="cch1">Publications</a>
+        <a href="software.html" style="color:#5F5A51;padding:4px 0;border-bottom:2px solid transparent" class="cch1">Software</a>
+        <a href="teaching.html" style="color:#5F5A51;padding:4px 0;border-bottom:2px solid transparent" class="cch1">Teaching</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header style="max-width:1180px;margin:0 auto;padding:84px 32px 76px">
+    <div style="display:flex;flex-wrap:wrap;gap:64px;align-items:flex-start">
+
+      <div style="flex:1 1 460px;animation:fadeUp 0.7s ease both">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:0.2em;text-transform:uppercase;color:#BC5A2E">Varner Lab — Cornell University</div>
+        <h1 style="font-family:'IBM Plex Serif',Georgia,serif;font-weight:500;font-size:clamp(40px,5.4vw,62px);line-height:1.04;letter-spacing:-0.02em;margin:24px 0 0">Mathematical models for markets and molecules.</h1>
+        <p style="font-size:18.5px;line-height:1.62;color:#5F5A51;max-width:53ch;margin:28px 0 0">The Varner Lab builds mathematical models and computational tools at the intersection of engineering, data science, and applied mathematics — spanning quantitative finance and machine learning today, on a deep foundation in systems and synthetic biology.</p>
+
+        <div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:32px">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#5F5A51;border:1px solid #DAD4C8;padding:6px 12px;background:#FBFAF6">Quantitative Finance</span>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#5F5A51;border:1px solid #DAD4C8;padding:6px 12px;background:#FBFAF6">Machine Learning</span>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#5F5A51;border:1px solid #DAD4C8;padding:6px 12px;background:#FBFAF6">Systems Biology</span>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#5F5A51;border:1px solid #DAD4C8;padding:6px 12px;background:#FBFAF6">Cell-Free Systems</span>
         </div>
-    </nav>
 
-    <section class="hero">
-        <div class="container">
-            <img src="https://avatars.githubusercontent.com/u/14302599?s=400" alt="Jeffrey D. Varner" class="hero-photo">
-            <div class="hero-text">
-                <h1>Varner Lab</h1>
-                <div class="tagline">Mathematical Modeling, Machine Learning &amp; Quantitative Finance</div>
-                <div class="affiliation">Cornell University, Ithaca NY</div>
-            </div>
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:24px;margin-top:38px">
+          <a href="publications.html" style="display:inline-flex;align-items:center;gap:9px;background:#BC5A2E;color:#fff;font-size:14.5px;font-weight:500;padding:13px 22px;letter-spacing:0.01em" class="cch2">View publications <span style="font-family:'IBM Plex Mono',monospace">&rarr;</span></a>
+          <a href="https://github.com/varnerlab" style="font-size:14.5px;color:#1B1916;border-bottom:1px solid #C9C2B4;padding-bottom:2px" class="cch3">GitHub</a>
+          <a href="https://scholar.google.com/citations?user=o1UDaMwAAAAJ&hl=en" style="font-size:14.5px;color:#1B1916;border-bottom:1px solid #C9C2B4;padding-bottom:2px" class="cch3">Google Scholar</a>
         </div>
-    </section>
+      </div>
 
-    <main>
-        <div class="container">
-            <section class="about">
-                <h2 class="section-title">About</h2>
-                <p>
-                    The Varner Lab develops mathematical models and computational tools at the intersection of engineering,
-                    data science, and applied mathematics. Our current research focuses on quantitative finance, including
-                    agent-based market simulations, transformer models for financial time series, and computational approaches
-                    to risk management and portfolio optimization. We also maintain active projects in process modeling,
-                    computational biology, and systems and synthetic biology, where we continue to build predictive models
-                    of metabolic networks, signal transduction, coagulation, and cell-free protein synthesis.
-                    We are committed to <a href="https://blogs.plos.org/plos/tag/open-science/">Open Science</a>
-                    and make our models, data, and code freely available.
-                </p>
-            </section>
-
-            <section>
-                <h2 class="section-title">Explore</h2>
-                <div class="highlight-grid">
-                    <a href="publications.html" class="card highlight-card">
-                        <h3>Publications</h3>
-                        <p>Peer-reviewed articles and preprints with links to code repositories.</p>
-                        <span class="card-link">View publications &rarr;</span>
-                    </a>
-                    <a href="software.html" class="card highlight-card">
-                        <h3>Software</h3>
-                        <p>Open-source tools and packages for modeling and simulation.</p>
-                        <span class="card-link">View software &rarr;</span>
-                    </a>
-                    <a href="teaching.html" class="card highlight-card">
-                        <h3>Teaching</h3>
-                        <p>Courses in computational thinking, ML/AI, and quantitative finance.</p>
-                        <span class="card-link">View courses &rarr;</span>
-                    </a>
-                </div>
-            </section>
+      <aside style="flex:0 1 320px;animation:fadeUp 0.7s ease 0.12s both">
+        <div style="border:1px solid #E2DDD2;background:#FBFAF6;padding:14px">
+          <img src="https://avatars.githubusercontent.com/u/14302599?s=460" alt="Jeffrey D. Varner" style="width:100%;aspect-ratio:1/1;object-fit:cover;filter:grayscale(0.12)">
+          <div style="padding:18px 6px 4px">
+            <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:21px;font-weight:500;line-height:1.2">Jeffrey D. Varner</div>
+            <div style="font-size:14px;color:#5F5A51;margin-top:4px">Professor &amp; Principal Investigator</div>
+          </div>
+          <dl style="margin:16px 0 0;border-top:1px solid #E2DDD2;font-family:'IBM Plex Mono',monospace;font-size:12px">
+            <div style="display:flex;justify-content:space-between;gap:12px;padding:11px 6px;border-bottom:1px solid #ECE7DC"><dt style="color:#9A948A;letter-spacing:0.08em">DEPT</dt><dd style="margin:0;color:#3A3631;text-align:right">Chem. &amp; Biomolecular Eng.</dd></div>
+            <div style="display:flex;justify-content:space-between;gap:12px;padding:11px 6px;border-bottom:1px solid #ECE7DC"><dt style="color:#9A948A;letter-spacing:0.08em">LOCATION</dt><dd style="margin:0;color:#3A3631;text-align:right">Ithaca, NY</dd></div>
+            <div style="display:flex;justify-content:space-between;gap:12px;padding:11px 6px"><dt style="color:#9A948A;letter-spacing:0.08em">CONTACT</dt><dd style="margin:0;text-align:right"><a href="mailto:jdv27@cornell.edu" style="color:#BC5A2E">jdv27@cornell.edu</a></dd></div>
+          </dl>
         </div>
-    </main>
+      </aside>
 
-    <footer>
-        <div class="container">
-            <div class="footer-info">
-                VARNERLAB &middot; Cornell University &middot; Ithaca, NY 14850
-            </div>
-            <ul class="footer-links">
-                <li><a href="mailto:jdv27@cornell.edu">Contact</a></li>
-                <li><a href="https://github.com/varnerlab">GitHub</a></li>
-                <li><a href="https://scholar.google.com/citations?user=o1UDaMwAAAAJ&hl=en">Google Scholar</a></li>
-                <li><a href="https://www.linkedin.com/in/jeffrey-varner-15b0045/">LinkedIn</a></li>
-                <li><a href="https://www.engineering.cornell.edu/faculty-directory/jeffrey-d-varner">Cornell</a></li>
-            </ul>
+    </div>
+  </header>
+
+  <!-- ===== STAT STRIP ===== -->
+  <section style="border-top:1px solid #E2DDD2;border-bottom:1px solid #E2DDD2;background:#FBFAF6">
+    <div style="max-width:1180px;margin:0 auto;padding:0 32px;display:flex;flex-wrap:wrap">
+      <div style="flex:1 1 200px;padding:30px 8px;border-right:1px solid #ECE7DC">
+        <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:38px;font-weight:500;line-height:1">70<span style="color:#BC5A2E">+</span></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.14em;text-transform:uppercase;color:#9A948A;margin-top:8px">Peer-reviewed publications</div>
+      </div>
+      <div style="flex:1 1 200px;padding:30px 8px;border-right:1px solid #ECE7DC">
+        <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:38px;font-weight:500;line-height:1">20<span style="color:#BC5A2E">+</span></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.14em;text-transform:uppercase;color:#9A948A;margin-top:8px">Open-source repositories</div>
+      </div>
+      <div style="flex:1 1 200px;padding:30px 8px">
+        <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:38px;font-weight:500;line-height:1">2000</div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.14em;text-transform:uppercase;color:#9A948A;margin-top:8px">Publishing since</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RESEARCH ===== -->
+  <section id="research" style="max-width:1180px;margin:0 auto;padding:80px 32px 24px">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:0.2em;text-transform:uppercase;color:#BC5A2E">Research</div>
+    <h2 style="font-family:'IBM Plex Serif',Georgia,serif;font-weight:500;font-size:clamp(28px,3.4vw,38px);letter-spacing:-0.015em;margin:14px 0 0">Two domains, one approach.</h2>
+    <p style="font-size:17px;color:#5F5A51;max-width:60ch;margin:16px 0 0">A consistent toolkit — mechanistic modeling, ensemble parameter estimation, and machine learning — applied to systems as different as a financial market and a living cell.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:28px;margin-top:48px">
+
+      <article style="background:#FBFAF6;border:1px solid #E2DDD2;padding:34px">
+        <div style="display:flex;align-items:baseline;justify-content:space-between">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#BC5A2E">01</span>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#9A948A">Current focus</span>
         </div>
-    </footer>
+        <h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:24px;font-weight:500;margin:18px 0 0;line-height:1.2">Quantitative Finance &amp; Machine Learning</h3>
+        <p style="font-size:15.5px;color:#5F5A51;line-height:1.65;margin:14px 0 0">Methods from engineering, statistics, and machine learning applied to financial systems — agent-based market simulations, transformer models for financial time series, and regime-aware models of risk and return.</p>
+        <ul style="list-style:none;padding:0;margin:22px 0 0;display:flex;flex-direction:column;gap:0">
+          <li style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#3A3631;padding:10px 0;border-top:1px solid #ECE7DC">Agent-based market simulation</li>
+          <li style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#3A3631;padding:10px 0;border-top:1px solid #ECE7DC">Transformer models for time series</li>
+          <li style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#3A3631;padding:10px 0;border-top:1px solid #ECE7DC">Regime models &amp; value-at-risk</li>
+          <li style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#3A3631;padding:10px 0;border-top:1px solid #ECE7DC">Options pricing &amp; portfolio optimization</li>
+        </ul>
+      </article>
 
+      <article style="background:#FBFAF6;border:1px solid #E2DDD2;padding:34px">
+        <div style="display:flex;align-items:baseline;justify-content:space-between">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#BC5A2E">02</span>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#9A948A">Foundation</span>
+        </div>
+        <h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:24px;font-weight:500;margin:18px 0 0;line-height:1.2">Systems &amp; Synthetic Biology</h3>
+        <p style="font-size:15.5px;color:#5F5A51;line-height:1.65;margin:14px 0 0">Two decades building predictive, mechanistic models of biological systems — metabolic networks, signal transduction, the coagulation and complement cascades, and cell-free protein synthesis.</p>
+        <ul style="list-style:none;padding:0;margin:22px 0 0;display:flex;flex-direction:column;gap:0">
+          <li style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#3A3631;padding:10px 0;border-top:1px solid #ECE7DC">Metabolic &amp; constraint-based models</li>
+          <li style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#3A3631;padding:10px 0;border-top:1px solid #ECE7DC">Signal transduction networks</li>
+          <li style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#3A3631;padding:10px 0;border-top:1px solid #ECE7DC">Coagulation &amp; complement cascades</li>
+          <li style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#3A3631;padding:10px 0;border-top:1px solid #ECE7DC">Cell-free protein synthesis</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== SELECTED WORK ===== -->
+  <section style="max-width:1180px;margin:0 auto;padding:64px 32px 24px">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px">
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:0.2em;text-transform:uppercase;color:#BC5A2E">Selected Work</div>
+        <h2 style="font-family:'IBM Plex Serif',Georgia,serif;font-weight:500;font-size:clamp(28px,3.4vw,38px);letter-spacing:-0.015em;margin:14px 0 0">Recent &amp; notable.</h2>
+      </div>
+      <a href="publications.html" style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#1B1916;border-bottom:1px solid #C9C2B4;padding-bottom:3px" class="cch3">All 70+ publications &rarr;</a>
+    </div>
+
+    <div style="margin-top:40px;border-top:1px solid #E2DDD2">
+
+      <a href="https://arxiv.org/abs/2411.16585" style="display:flex;flex-wrap:wrap;gap:8px 32px;padding:26px 4px;border-bottom:1px solid #E2DDD2;align-items:baseline" class="cch4">
+        <div style="flex:0 0 132px;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9A948A;letter-spacing:0.04em">2024 · arXiv</div>
+        <div style="flex:1 1 380px">
+          <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:19.5px;font-weight:500;line-height:1.32;color:#1B1916">MarketGPT: Developing a pre-trained transformer (GPT) for modeling financial time series</div>
+          <div style="font-size:14px;color:#5F5A51;margin-top:6px">Wheeler A, Varner JD</div>
+        </div>
+        <div style="flex:0 0 auto;color:#BC5A2E;font-family:'IBM Plex Mono',monospace;font-size:15px">&rarr;</div>
+      </a>
+
+      <a href="https://arxiv.org/abs/2312.14903" style="display:flex;flex-wrap:wrap;gap:8px 32px;padding:26px 4px;border-bottom:1px solid #E2DDD2;align-items:baseline" class="cch4">
+        <div style="flex:0 0 132px;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9A948A;letter-spacing:0.04em">2024 · arXiv</div>
+        <div style="flex:1 1 380px">
+          <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:19.5px;font-weight:500;line-height:1.32;color:#1B1916">Scalable agent-based modeling for complex financial market simulations</div>
+          <div style="font-size:14px;color:#5F5A51;margin-top:6px">Wheeler A, Varner JD</div>
+        </div>
+        <div style="flex:0 0 auto;color:#BC5A2E;font-family:'IBM Plex Mono',monospace;font-size:15px">&rarr;</div>
+      </a>
+
+      <a href="https://arxiv.org/abs/2603.19115" style="display:flex;flex-wrap:wrap;gap:8px 32px;padding:26px 4px;border-bottom:1px solid #E2DDD2;align-items:baseline" class="cch4">
+        <div style="flex:0 0 132px;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9A948A;letter-spacing:0.04em">2026 · arXiv</div>
+        <div style="flex:1 1 380px">
+          <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:19.5px;font-weight:500;line-height:1.32;color:#1B1916">BSTModelKit.jl: Constructing, solving, and analyzing Biochemical Systems Theory models</div>
+          <div style="font-size:14px;color:#5F5A51;margin-top:6px">Vadhin S, Varner JD</div>
+        </div>
+        <div style="flex:0 0 auto;color:#BC5A2E;font-family:'IBM Plex Mono',monospace;font-size:15px">&rarr;</div>
+      </a>
+
+      <a href="https://doi.org/10.1038/77589" style="display:flex;flex-wrap:wrap;gap:8px 32px;padding:26px 4px;border-bottom:1px solid #E2DDD2;align-items:baseline" class="cch4">
+        <div style="flex:0 0 132px;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9A948A;letter-spacing:0.04em">2000 · Nature Biotech.</div>
+        <div style="flex:1 1 380px">
+          <div style="font-family:'IBM Plex Serif',Georgia,serif;font-size:19.5px;font-weight:500;line-height:1.32;color:#1B1916">A mathematical model of caspase function in apoptosis</div>
+          <div style="font-size:14px;color:#5F5A51;margin-top:6px">Fussenegger M, Bailey JE, Varner JD</div>
+        </div>
+        <div style="flex:0 0 auto;color:#BC5A2E;font-family:'IBM Plex Mono',monospace;font-size:15px">&rarr;</div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ===== EXPLORE ===== -->
+  <section style="max-width:1180px;margin:0 auto;padding:64px 32px 88px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0;border:1px solid #E2DDD2;background:#FBFAF6">
+      <a href="publications.html" style="padding:34px 30px;border-right:1px solid #E2DDD2;display:block" class="cch5">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9A948A;letter-spacing:0.12em">01</div>
+        <h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:22px;font-weight:500;margin:14px 0 0">Publications</h3>
+        <p style="font-size:14.5px;color:#5F5A51;line-height:1.6;margin:10px 0 18px">Peer-reviewed articles and preprints, 2000–present, with links to code and data.</p>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#BC5A2E">Browse &rarr;</span>
+      </a>
+      <a href="software.html" style="padding:34px 30px;border-right:1px solid #E2DDD2;display:block" class="cch5">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9A948A;letter-spacing:0.12em">02</div>
+        <h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:22px;font-weight:500;margin:14px 0 0">Software</h3>
+        <p style="font-size:14.5px;color:#5F5A51;line-height:1.6;margin:10px 0 18px">Open-source packages and models for finance, simulation, and computational biology.</p>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#BC5A2E">Browse &rarr;</span>
+      </a>
+      <a href="teaching.html" style="padding:34px 30px;display:block" class="cch5">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9A948A;letter-spacing:0.12em">03</div>
+        <h3 style="font-family:'IBM Plex Serif',Georgia,serif;font-size:22px;font-weight:500;margin:14px 0 0">Teaching</h3>
+        <p style="font-size:14.5px;color:#5F5A51;line-height:1.6;margin:10px 0 18px">Courses in computational thinking, machine learning, and quantitative finance.</p>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#BC5A2E">Browse &rarr;</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer style="border-top:1px solid #E2DDD2;background:#1B1916;color:#D9D3C7">
+    <div style="max-width:1180px;margin:0 auto;padding:56px 32px 28px;display:flex;flex-wrap:wrap;gap:48px;justify-content:space-between">
+      <div style="flex:1 1 320px;max-width:420px">
+        <div style="display:flex;align-items:center;gap:11px">
+          <span style="width:10px;height:10px;background:#BC5A2E;display:inline-block"></span>
+          <span style="font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:15px;letter-spacing:0.16em;color:#F4F2EC">VARNER LAB</span>
+        </div>
+        <p style="font-size:14.5px;line-height:1.6;color:#9A9488;margin:18px 0 0">Robert Frederick Smith School of Chemical &amp; Biomolecular Engineering, Cornell University · Ithaca, NY 14850</p>
+        <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#BC5A2E;margin:16px 0 0;letter-spacing:0.04em">Committed to Open Science</p>
+      </div>
+      <div style="flex:0 1 auto">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.14em;text-transform:uppercase;color:#6E685D">Connect</div>
+        <ul style="list-style:none;padding:0;margin:18px 0 0;display:flex;flex-direction:column;gap:11px;font-size:14.5px">
+          <li><a href="mailto:jdv27@cornell.edu" style="color:#D9D3C7" class="cch6">Email</a></li>
+          <li><a href="https://github.com/varnerlab" style="color:#D9D3C7" class="cch6">GitHub</a></li>
+          <li><a href="https://scholar.google.com/citations?user=o1UDaMwAAAAJ&hl=en" style="color:#D9D3C7" class="cch6">Google Scholar</a></li>
+          <li><a href="https://www.linkedin.com/in/jeffrey-varner-15b0045/" style="color:#D9D3C7" class="cch6">LinkedIn</a></li>
+          <li><a href="https://www.engineering.cornell.edu/faculty-directory/jeffrey-d-varner" style="color:#D9D3C7" class="cch6">Cornell Profile</a></li>
+        </ul>
+      </div>
+    </div>
+    <div style="max-width:1180px;margin:0 auto;padding:18px 32px;border-top:1px solid #322E28;font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#6E685D;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px">
+      <span>© 2026 Varner Lab</span>
+      <span>varnerlab.org</span>
+    </div>
+  </footer>
+
+</div>
 </body>
 </html>
