@@ -1,0 +1,172 @@
+/* ==========================================================================
+   Varner Lab — color tokens
+   --------------------------------------------------------------------------
+   All page colors resolve through these variables. Light values are the
+   original palette; dark values are the counterpart.
+
+   The dark block is intentionally written twice: once behind the system
+   preference (so it works with JavaScript disabled) and once behind
+   [data-theme="dark"] (so the nav toggle can override the system). Keep the
+   two lists identical — edit both or neither.
+
+   The footer is dark in both themes, so it carries its own --footer-* tokens
+   and shifts only slightly in dark mode.
+   ========================================================================== */
+
+:root {
+  color-scheme: light;
+
+  /* surfaces */
+  --bg: #F4F2EC;
+  --bg-nav: rgba(244, 242, 236, 0.86);
+  --surface: #FBFAF6;
+  --surface-hi: #FCFBF8;
+
+  /* text */
+  --ink: #1B1916;
+  --ink-2: #3A3631;
+  --muted: #5F5A51;
+  --muted-2: #7A746A;
+  --faint: #9A948A;
+
+  /* lines */
+  --border: #E2DDD2;
+  --border-soft: #ECE7DC;
+  --border-strong: #DAD4C8;
+  --rule: #C9C2B4;
+
+  /* accent */
+  --accent: #BC5A2E;
+  --accent-hover: #9A4520;
+  --accent-soft: #E3B79F;
+  --accent-dim: #C9A48F;
+  --on-accent: #fff;
+
+  /* language tags (software page) */
+  --lang-julia: #9558B2;
+  --lang-matlab: #C0612F;
+  --lang-python: #3776AB;
+  --lang-octave: #1A7FA8;
+
+  /* footer — dark in both themes */
+  --footer-bg: #1B1916;
+  --footer-ink: #D9D3C7;
+  --footer-ink-hover: #fff;
+  --footer-muted: #9A9488;
+  --footer-faint: #6E685D;
+  --footer-rule: #322E28;
+  --footer-logo: #F4F2EC;
+  --footer-accent: #BC5A2E;
+
+  --tog-glyph: "\25D0"; /* half circle, filled left — light theme active */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+
+    --bg: #100F0D;
+    --bg-nav: rgba(16, 15, 13, 0.86);
+    --surface: #201D18;
+    --surface-hi: #28241F;
+
+    --ink: #EFECE3;
+    --ink-2: #D5D0C4;
+    --muted: #A59F93;
+    --muted-2: #918A7E;
+    --faint: #8A8478;
+
+    --border: #3A352C;
+    --border-soft: #2B2721;
+    --border-strong: #4A4338;
+    --rule: #4A443A;
+
+    --accent: #E5895B;
+    --accent-hover: #F2A279;
+    --accent-soft: #7C4A2C;
+    --accent-dim: #8A5738;
+    --on-accent: #100F0D;
+
+    --lang-julia: #B98AD1;
+    --lang-matlab: #E0895A;
+    --lang-python: #6FA8D6;
+    --lang-octave: #55AFD1;
+
+    --footer-bg: #0D0C0A;
+    --footer-ink: #CFC9BD;
+    --footer-ink-hover: #fff;
+    --footer-muted: #948E82;
+    --footer-faint: #7F796E;
+    --footer-rule: #262219;
+    --footer-logo: #EFECE3;
+    --footer-accent: #E5895B;
+
+    --tog-glyph: "\25D1"; /* half circle, filled right — dark theme active */
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg: #100F0D;
+  --bg-nav: rgba(16, 15, 13, 0.86);
+  --surface: #201D18;
+  --surface-hi: #28241F;
+
+  --ink: #EFECE3;
+  --ink-2: #D5D0C4;
+  --muted: #A59F93;
+  --muted-2: #918A7E;
+  --faint: #8A8478;
+
+  --border: #3A352C;
+  --border-soft: #2B2721;
+  --border-strong: #4A4338;
+  --rule: #4A443A;
+
+  --accent: #E5895B;
+  --accent-hover: #F2A279;
+  --accent-soft: #7C4A2C;
+  --accent-dim: #8A5738;
+  --on-accent: #100F0D;
+
+  --lang-julia: #B98AD1;
+  --lang-matlab: #E0895A;
+  --lang-python: #6FA8D6;
+  --lang-octave: #55AFD1;
+
+  --footer-bg: #0D0C0A;
+  --footer-ink: #CFC9BD;
+  --footer-ink-hover: #fff;
+  --footer-muted: #948E82;
+  --footer-faint: #7F796E;
+  --footer-rule: #262219;
+  --footer-logo: #EFECE3;
+  --footer-accent: #E5895B;
+
+  --tog-glyph: "\25D1"; /* half circle, filled right — dark theme active */
+}
+
+html, body { background: var(--bg); }
+
+/* Nav theme toggle */
+.themetog {
+  appearance: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  color: var(--muted);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 17px;
+  line-height: 1;
+  transition: color .2s ease, border-color .2s ease, background .2s ease;
+}
+.themetog::before { content: var(--tog-glyph); }
+.themetog:hover { border-color: var(--accent); color: var(--accent); }
+.themetog:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
